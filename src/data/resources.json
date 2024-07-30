@@ -1,0 +1,43 @@
+{
+  "resources": [
+    {
+      "title": "Product Catalouge",
+      "path": "/elito-general.pdf",
+      "dName": "elito-general.pdf"
+    },
+    {
+      "title": "Specification Sheet",
+      "path": "/sheets.pdf",
+      "dName": "sheets.pdf"
+    },
+    {
+      "title": "Authorization Letter",
+      "path": "/authorization-letter.pdf",
+      "dName": "authorization-letter.pdf"
+    },
+    {
+      "title": "MSDS - AMARA RAJA",
+      "path": "/msds-amar-raja.pdf",
+      "dName": "msds-amar-raja.pdf"
+    }
+  ],
+
+  "certificates": [
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716549165/elito-batteries/resources/xnsclra4mmhbfevmbfda.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716549175/elito-batteries/resources/ssucrfmfxdugv9i2dwkt.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716549172/elito-batteries/resources/bvxnalx6z8padckx6gbp.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716895389/elito-batteries/resources/dn8dmnqlqqbouij3lt9h.jpg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716549169/elito-batteries/resources/jxgxwgutrzpjshpijyk2.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716549177/elito-batteries/resources/t1kn2qp47yhxyargpbmn.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716549167/elito-batteries/resources/gfe9ttmlolu46tgxmiwr.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716895269/elito-batteries/resources/qxtqpehlk1i0wqbyyff2.png"
+    }
+  ]
+}

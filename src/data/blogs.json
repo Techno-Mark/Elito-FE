@@ -1,0 +1,108 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Motorcycle Battery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "link": "/blogs/motor-cycle-battery/1",
+      "date": "April 5, 2024",
+      "summary": {
+        "mainImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg",
+        "keywords": [
+          " September 22, 2023",
+          "Batteries",
+          "Massimo Batteries",
+          "0 Comments"
+        ],
+        "title": "Your car’s fluids should be checked",
+        "paragraphs": [
+          "Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim. Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.",
+          "Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Nam sit amet arcu feugiat, consequat orci at, ultrices magna.",
+          "At augue eget arcu dictum varius duis. Massa eget egestas purus viverra accumsan in nisl nisi. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Nulla facilisi etiam dignissim diam. At in tellus integer feugiat scelerisque varius morbi enim. Faucibus pulvinar elementum integer enim neque volutpat. Pharetra sit amet aliquam id diam. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Urna nunc id cursus metus aliquam eleifend mi in. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Fringilla est ullamcorper eget nulla. Nisi porta lorem mollis aliquam ut porttitor leo a."
+        ],
+        "secondaryImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg",
+        "titledParagraph": [
+          {
+            "title": "Beverage and tobacco product manufacturing:",
+            "paragraph": "There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise. Cement that can generate light? Concrete for building on Mars? Translucent wood? Biodegradable furniture? Pollution absorbing bricks? At first, it sounds crazy but these are only some of the research projects taking place around the world in order to take the construction industry to the next level."
+          },
+          {
+            "title": "Beverage and tobacco product manufacturing:",
+            "paragraph": "There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise. Cement that can generate light? Concrete for building on Mars? Translucent wood? Biodegradable furniture? Pollution absorbing bricks? At first, it sounds crazy but these are only some of the research projects taking place around the world in order to take the construction industry to the next level."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "2",
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Motorcycle Battery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "link": "/blogs/motor-cycle-battery/1",
+      "date": "April 5, 2024",
+      "summary": {
+        "mainImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg",
+        "keywords": [
+          " September 22, 2023",
+          "Batteries",
+          "Massimo Batteries",
+          "0 Comments"
+        ],
+        "title": "Your car’s fluids should be checked",
+        "paragraphs": [
+          "Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim. Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.",
+          "Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Nam sit amet arcu feugiat, consequat orci at, ultrices magna.",
+          "At augue eget arcu dictum varius duis. Massa eget egestas purus viverra accumsan in nisl nisi. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Nulla facilisi etiam dignissim diam. At in tellus integer feugiat scelerisque varius morbi enim. Faucibus pulvinar elementum integer enim neque volutpat. Pharetra sit amet aliquam id diam. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Urna nunc id cursus metus aliquam eleifend mi in. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Fringilla est ullamcorper eget nulla. Nisi porta lorem mollis aliquam ut porttitor leo a."
+        ],
+        "secondaryImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg",
+        "titledParagraph": [
+          {
+            "title": "Beverage and tobacco product manufacturing:",
+            "paragraph": "There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise. Cement that can generate light? Concrete for building on Mars? Translucent wood? Biodegradable furniture? Pollution absorbing bricks? At first, it sounds crazy but these are only some of the research projects taking place around the world in order to take the construction industry to the next level."
+          },
+          {
+            "title": "Beverage and tobacco product manufacturing:",
+            "paragraph": "There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise. Cement that can generate light? Concrete for building on Mars? Translucent wood? Biodegradable furniture? Pollution absorbing bricks? At first, it sounds crazy but these are only some of the research projects taking place around the world in order to take the construction industry to the next level."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "2",
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Motorcycle Battery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "link": "/blogs/motor-cycle-battery/1",
+      "date": "April 5, 2024",
+      "summary": {
+        "mainImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg",
+        "keywords": [
+          " September 22, 2023",
+          "Batteries",
+          "Massimo Batteries",
+          "0 Comments"
+        ],
+        "title": "Your car’s fluids should be checked",
+        "paragraphs": [
+          "Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim. Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.",
+          "Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Nam sit amet arcu feugiat, consequat orci at, ultrices magna.",
+          "At augue eget arcu dictum varius duis. Massa eget egestas purus viverra accumsan in nisl nisi. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Nulla facilisi etiam dignissim diam. At in tellus integer feugiat scelerisque varius morbi enim. Faucibus pulvinar elementum integer enim neque volutpat. Pharetra sit amet aliquam id diam. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Urna nunc id cursus metus aliquam eleifend mi in. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Fringilla est ullamcorper eget nulla. Nisi porta lorem mollis aliquam ut porttitor leo a."
+        ],
+        "secondaryImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg",
+        "titledParagraph": [
+          {
+            "title": "Beverage and tobacco product manufacturing:",
+            "paragraph": "There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise. Cement that can generate light? Concrete for building on Mars? Translucent wood? Biodegradable furniture? Pollution absorbing bricks? At first, it sounds crazy but these are only some of the research projects taking place around the world in order to take the construction industry to the next level."
+          },
+          {
+            "title": "Beverage and tobacco product manufacturing:",
+            "paragraph": "There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise. Cement that can generate light? Concrete for building on Mars? Translucent wood? Biodegradable furniture? Pollution absorbing bricks? At first, it sounds crazy but these are only some of the research projects taking place around the world in order to take the construction industry to the next level."
+          }
+        ]
+      }
+    }
+  ]
+}

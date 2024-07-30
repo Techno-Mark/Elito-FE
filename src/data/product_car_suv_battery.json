@@ -1,0 +1,37 @@
+{
+  "points": [
+    {
+      "iconUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716280417/elito-batteries/products/chcfvar9l747ldoniqao.svg",
+      "title1": "Superior cranking",
+      "title2": "power",
+      "description": "Designed with high cranking ability for more power and enhanced vibration resistance, keeping the vehicle safe and damage-free. "
+    },
+    {
+      "iconUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716280415/elito-batteries/products/hkhcydv84povyhsrtj32.svg",
+      "title1": "Built-in safety",
+      "title2": "mechanisms",
+      "description": "Crafted for smoother rides on tough roads, with added protection of built-in safety mechanisms."
+    },
+    {
+      "iconUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716280419/elito-batteries/products/o7bulp4uk8trlndqafce.svg",
+      "title1": "Engineered for",
+      "title2": "modern-day vehicles",
+      "description": "Made with state-of-the-art technology to offer modern-day features and cater to new-age vehicles."
+    }
+  ],
+
+  "faqs": [
+    {
+      "title": "What should I consider while buying a battery?",
+      "content": "There are multiple factors that must be considered while buying a battery. However, battery size, warranty, and power (CCA and RC) are some of the most important aspects to consider."
+    },
+    {
+      "title": "What does CCA mean?",
+      "content": "CCA stands for Cold Cranking Amps, which is a rating used to define the battery’s ability to start the engine of a vehicle in cold temperatures. The CCA rating is determined by the number of amps a fully charged new battery can deliver for 30 seconds at 0° F. In short, the higher the CCA rating, the better the battery starting power. "
+    },
+    {
+      "title": "What does RC mean?",
+      "content": "RC stands for Reserve Capacity, which is a battery rating that defines its ability to power up a vehicle with a fan belt or inoperative alternator. RC rating is the number of minutes a battery takes to discharge at 80° F and 25 amps. The higher the RC rating, the longer the vehicle’s operating capacity in case of fan belt or alternator failure."
+    }
+  ]
+}

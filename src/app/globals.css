@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* custom CSS for backgrounds */
+.home-hero-bg {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715916591/elito-batteries/home/ikxetbwyy2ujvl48rlq1.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero-bg-two {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1717472640/elito-batteries/home/sdw6tstdfspwwagygy9b.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-stats-bg {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715929175/elito-batteries/home/ghtswnul5r8qgqc8rhso.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.products-home-bg {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716204603/elito-batteries/products/wjcdbrixozhjllvc8jde.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sub-products-home-bg {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716210481/elito-batteries/products/h1al3zl2r65wfiuvwye3.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sub-products-points-bg {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716279922/elito-batteries/products/eqwawmfz32cil42xohyt.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.blogs-bg {
+  background-image: url("https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716433774/elito-batteries/blogs/mxemmz23wlhqtkwqmhlt.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* CSS for scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* CSS for testimonial slider  */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 4px !important;
+  border-radius: 5px !important;
+  margin: 0 6px !important;
+}
+
+.swiper-pagination {
+  bottom: 2px !important;
+}
+
+.swiper-wrapper {
+  height: max-content !important;
+  width: max-content !important;
+  padding-bottom: 64px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4f46e5 !important;
+}
+
+.swiper-slide.swiper-slide-active > .slide_active\:border-indigo-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.swiper-slide.swiper-slide-active > .group .slide_active\:text-gray-800 {
+  ---tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+/* CSS for map and it's location */
+.mapContainer {
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+.location {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+/* CSS for testimonial sliders (unique-one) */
+.slick-slide {
+  transition: transform 0.5s, height 0.5s;
+}
+.active-slide .testimonial-box {
+  height: 425px;
+}
+.testimonial-box {
+  height: 100%;
+}

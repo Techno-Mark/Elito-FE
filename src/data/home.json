@@ -1,0 +1,118 @@
+{
+  "needs": [
+    {
+      "id": "1",
+      "src": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Cars/SUV Battery",
+      "description": "Engineered to meet the demands of safety, durability, and dependable performance, these batteries are designed for advanced technology new-gen cars. ",
+      "link": "/products/car-suv-battery"
+    },
+    {
+      "id": "2",
+      "src": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716206006/elito-batteries/products/u3kaevme6ngopnxvorul.svg",
+      "title": "Truck/Tractor Battery",
+      "description": "Crafted to withstand rough terrains, and extreme climates, and handle heavy loads to offer reliable power and longevity even in harshest conditions.",
+      "link": "/products/truck-tractor-battery"
+    }
+  ],
+
+  "stats": [
+    {
+      "number": 2,
+      "sign": "+",
+      "name1": "Manufacturing",
+      "name2": "Plants"
+    },
+    {
+      "number": 100,
+      "sign": "K+",
+      "name1": "Happy",
+      "name2": "Customers"
+    },
+    {
+      "number": 51,
+      "sign": "+",
+      "name1": "Locations Across",
+      "name2": "the Globe"
+    },
+    {
+      "number": 35,
+      "sign": "+",
+      "name1": "Years of Factory",
+      "name2": "Establishment"
+    }
+  ],
+
+  "points": [
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716094252/elito-batteries/home/cnr9x2eykg5p9himzwqz.svg",
+      "title": "Sealed Maintenance Free Battery",
+      "description": "Designed with state-of-the-art technology to offer high performance at zero maintenance."
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716094252/elito-batteries/home/zbdd9tbg7jxfuysqg3sj.svg",
+      "title": "High Cranking Power",
+      "description": "Designed and tested for higher CCA rating to deliver more powerful and reliable engine function in harsh/cold temp. "
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716094252/elito-batteries/home/mlpy8a3ybucdwohp6qmt.svg",
+      "title": "High Heat Tolerance",
+      "description": "Tested for high heat tolerance, Elito Batteries are made for high charge acceptance. "
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716094252/elito-batteries/home/uwmyybzg40vwte5frewb.svg",
+      "title": "Auto Charge Retention",
+      "description": "Built-in ability to retain charge automatically when the battery is not in use. "
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716094252/elito-batteries/home/e31xck9y4rds3px3a8mv.svg",
+      "title": "Vibration Resistant",
+      "description": "Tested for vibration resistance to offer improved electrical performance and mechanical strength. "
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716094252/elito-batteries/home/mibn8yz5u8rgbpfubmi7.svg",
+      "title": "Single Vent Cover",
+      "description": "Designed to reduce water loss and improve MF performance giving longer shelf life. "
+    }
+  ],
+  "news": [
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Motorcycle Battery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "link": "/",
+      "date": "April 5, 2024"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Motorcycle Battery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "link": "/",
+      "date": "April 5, 2024"
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
+      "title": "Motorcycle Battery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "link": "/",
+      "date": "April 5, 2024"
+    }
+  ],
+  "testimonials": [
+    {
+      "description": "Thanks to ELITO for collaborating with us. Their commitment to excellence and customer satisfaction is unmatched, and I look forward to continuing our successful affiliation for years to come.",
+      "name": "Mr. Reazi",
+      "country": "Nepal"
+    },
+    {
+      "description": "Over the years, I've had the opportunity to collaborate with many brands. However, my partnership with ELITO as a distributor for automotive batteries has been exceptionally impressive.",
+      "name": "Mr. Hafiz Aizad",
+      "country": "Malayasia"
+    },
+    {
+      "description": "ELITO offers an impressive range of automotive batteries that cater to a wide variety of vehicles. These batteries are not only durable and reliable but also meet the high-performance standards required by our discerning customers.",
+      "name": "Mr. Kailash Krishnan",
+      "country": "Sydney"
+    }
+  ]
+}

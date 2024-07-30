@@ -1,0 +1,19 @@
+{
+  "choose": [
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716174804/elito-batteries/about-us/m8v9fcrlvlh6mcmfpnfu.svg",
+      "title": "Global Innovation",
+      "description": "Elito Batteries are designed and manufactured with advanced innovative solutions that cater to the evolving demands of the automotive industry across the globe."
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716174806/elito-batteries/about-us/ce9zs3c3rfnom4ck9oex.svg",
+      "title": "Customer Satisfaction",
+      "description": "Elito Batteries holds a strong brand legacy of being utilized and approved by high-end automobile brands, thus offering optimal customer satisfaction. "
+    },
+    {
+      "imgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716174809/elito-batteries/about-us/aedl2gfkf33bggm3hath.svg",
+      "title": "Proven Performance",
+      "description": "Elito Batteries are ultra-low maintenance and have a proven track record of unmatched power and high-quality performance in all weather conditions. "
+    }
+  ]
+}

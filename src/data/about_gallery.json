@@ -1,0 +1,28 @@
+{
+  "gallery": [
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716185811/elito-batteries/about-us/mwum0jswkiuadaafso2q.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716186460/elito-batteries/about-us/p84eh98sed1e3via40ss.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716185826/elito-batteries/about-us/xq5g6okljclfjokpehhd.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716186457/elito-batteries/about-us/hvzznzvuzwgmociobiyg.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716185832/elito-batteries/about-us/nk7ov2u1x4hhiasmlvhz.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716186449/elito-batteries/about-us/szpkd34ctohjuqquv3wz.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716185817/elito-batteries/about-us/qjdvzu5sxf4hm86cwckc.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716186454/elito-batteries/about-us/p0mpc61vuelbek89zkeq.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716185837/elito-batteries/about-us/eztauqbvgqdovibqgbwy.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716186452/elito-batteries/about-us/v2ttfbyfsr9rgtcgtzqb.svg"
+    },
+    {
+      "smallImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716185844/elito-batteries/about-us/hhnvp4wm1askxfjec1ca.svg",
+      "largeImgUrl": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716186447/elito-batteries/about-us/hhnlixqhn5uwxr7ksgwv.svg"
+    }
+  ]
+}

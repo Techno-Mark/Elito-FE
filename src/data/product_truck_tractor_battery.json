@@ -1,0 +1,16 @@
+{
+  "faqs": [
+    {
+      "title": "What does overheat do to a battery?",
+      "content": "Battery life can be deteriorated due to extremely hot temperatures as it evaporates water from the electrolyte and weakens the positive grids by corroding them."
+    },
+    {
+      "title": "When do I know that my battery needs to be replaced?",
+      "content": "One of the most common signs would be the vehicle failing to start. But that could occur due to several other reasons. Hence, it is important to get the battery tested for accurate troubleshooting and battery replacement at the right time."
+    },
+    {
+      "title": "While cleaning battery terminals or battery replacement, why must I remove the ground wire first?",
+      "content": "Removing ground wire is the first and foremost step towards safe battery replacement and terminal cleansing. Before starting the process, always check the type of grounding system. Removing the wrong connector could cause sparks and even cause the battery to explode. Hence, it is extremely important to remove the ground source first."
+    }
+  ]
+}
