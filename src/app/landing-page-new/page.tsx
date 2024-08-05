@@ -25,6 +25,14 @@ import Point from "../../../public/assets/icons/point";
 import QualityCheck from "../../../public/assets/icons/QualityCheck";
 import RetailChain from "../../../public/assets/icons/RetailChain";
 import Wholesaler from "../../../public/assets/icons/Wholesaler";
+import LongerShelfLife from "../../../public/assets/icons/benefits/longerShelfLife";
+import ZeroMaintenance from "../../../public/assets/icons/benefits/zeroMaintenance";
+import WeatherConditions from "../../../public/assets/icons/benefits/weatherConditions";
+import ReserveCapacity from "../../../public/assets/icons/benefits/reserveCapacity";
+import PerformanceRating from "../../../public/assets/icons/benefits/performanceRating";
+import Terrains from "../../../public/assets/icons/benefits/Terrains";
+import WaterLoss from "../../../public/assets/icons/benefits/waterLoss";
+import Stepper from "@/components/stepper/stepper";
 
 export default function Home() {
   const controls = useAnimation();
@@ -84,6 +92,21 @@ export default function Home() {
           You can become an Elito automotive battery distributor
         </p>
       ),
+    },
+  ];
+
+  const steps = [
+    {
+      icon: "/images/Infrastructure.svg",
+      title: "Infrastructure",
+    },
+    {
+      icon: "/images/Staffing.svg",
+      title: "Staffing",
+    },
+    {
+      icon: "/images/Compliance.svg",
+      title: "Compliance",
     },
   ];
 
@@ -203,6 +226,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section className={`relative py-10 md:py-16`}>
           <div className="container max-w-[1580px] px-4 mx-auto">
             <div className="flex justify-between items-center text-[#404040]">
@@ -218,6 +242,40 @@ export default function Home() {
                 width={389}
                 height={441}
               />
+            </div>
+          </div>
+        </section>
+        {/* Become an Elito Battery Distributor */}
+        <section className="py-10">
+          <div className="container">
+            <div className="max-w-[770px] mx-auto mb-8 md:mb-16">
+              <h4 className="text-themeRed text-3xl lg:text-4xl font-bold text-center pb-2">
+                Wondering What You Must Do to{" "}
+                <span className="md:block">
+                  Become an Elito Battery Distributor?
+                </span>
+              </h4>
+              <p className="block font-poppins text-center text-[#737273] text-xl mb-6 mx-auto">
+                An ideal Elito automotive battery distributor needs to meet the
+                manufacturer's requirements in terms of the following:
+              </p>
+            </div>
+            <div className="flex flex-col max-w-[770px] mx-auto lg:flex-row justify-between items-center lg:items-start lg:space-x-4">
+              {steps.map((step, index) => (
+                <div className="relative lg:max-w-[180px]" key={index}>
+                  <Stepper
+                    className="stepperClass"
+                    icon={step.icon}
+                    title={step.title}
+                    stepBoxClass="ml-4 md:ml-0 !text-left lg:!text-center"
+                  />
+                  {index < steps.length - 1 && (
+                    <div
+                      className={`h-px bg-[#00365E] w-1/2 lg:w-full absolute stepDivider`}
+                    />
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -389,7 +447,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <LongerShelfLife />
                   <span className="pt-8 font-poppins text-[#333333]">
                     Longer Shelf Life
                   </span>
@@ -411,7 +469,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <ZeroMaintenance />
                   <span className="pt-8 font-poppins text-[#333333]">
                     Zero Maintenance
                   </span>
@@ -422,7 +480,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <WeatherConditions />
                   <span className="pt-8 font-poppins text-[#333333]">
                     Suitable for All Weather Conditions
                   </span>
@@ -433,7 +491,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <ReserveCapacity />
                   <span className="pt-8 font-poppins text-[#333333]">
                     High Reserve Capacity
                   </span>
@@ -444,7 +502,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <PerformanceRating />
                   <span className="pt-8 font-poppins text-[#333333]">
                     C2 Performance Rating
                   </span>
@@ -455,7 +513,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <Terrains />
                   <span className="pt-8 font-poppins text-[#333333]">
                     Suitable for All Terrains
                   </span>
@@ -466,7 +524,7 @@ export default function Home() {
                   href="javascript;void(0);"
                   className="m-2 px-4 py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300]"
                 >
-                  <AutoChargeRetention />
+                  <WaterLoss />
                   <span className="pt-8 font-poppins text-[#333333]">
                     Reduced Water Loss
                   </span>
@@ -555,8 +613,8 @@ export default function Home() {
               <h4 className="text-themeRed text-3xl lg:text-4xl font-bold text-center pb-2">
                 Frequently Asked Questions
               </h4>
-              <p className="block font-poppins max-w-[880px] text-center text-[#737273] text-xl mb-6 mx-auto">
-                Still have questions and queries?{" "}
+              <p className="block font-poppins text-center text-[#737273] text-xl mb-6 mx-auto">
+                Still have questions and queries?
                 <span className="block">
                   We are here to answer your frequently asked questions!
                 </span>

@@ -64,3 +64,24 @@
     background-position: center;
     opacity: 0.5;
 }
+
+
+.stepDivider {
+    top: 35px;
+    left: 90%;
+}
+
+@media only screen and (max-width:1023px) {
+    .stepDivider {
+        width: 30%;
+        top: auto;
+        bottom: 45px;
+        left: 0;
+        transform: rotate(90deg);
+        height: 1.5px;
+    }
+
+    .stepperClass {
+        margin-bottom: 5rem;
+    }
+}

@@ -98,7 +98,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
     //   {({ errors, touched, setFieldValue }) => (
     <form className="w-full">
       <div
-        className={`flex flex-col items-center justify-center md:items-start md:flex-row whitespace-nowrap ${
+        className={`flex flex-col items-center justify-center md:items-center md:flex-row whitespace-nowrap ${
           varient === "dark" ? "md:flex-col whitespace-normal" : ""
         }`}
       >
@@ -150,20 +150,15 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
           />
         </div>
         <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
-          <select
+          <input
             name="city"
+            placeholder="City"
             className={`w-full flex items-center justify-between text-[12px] font-medium border border-[#73727366] rounded-lg py-2 px-4 cursor-pointer focus:outline-none`}
-          >
-            <option value="0">City</option>
-            <option value="1">option 1</option>
-            <option value="2">option 2</option>
-            <option value="3">option 3</option>
-            <option value="4">option 4</option>
-          </select>
+          />
         </div>
-        <div className="w-full md:mr-2 mb-2 lg:max-w-[330px]">
-          <div className="text-left whitespace-normal py-2">
-            <div className="flex items-base justify-center mb-2">
+        <div className="w-full md:mr-2 mb-2 md:mb-0 lg:max-w-[330px]">
+          <div className="text-left whitespace-normal">
+            <div className="flex items-base justify-center">
               <input
                 type="checkbox"
                 id="acceptTerms"
@@ -183,9 +178,9 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
 
         <button
           type="submit"
-          className={`rounded-lg mb-2 text-[12px] border border-[var(--highlighted-color)]`}
+          className={`rounded-lg text-[12px] bg-[#D30300] py-3 px-6`}
         >
-          Enquire Now!
+          Submit
         </button>
       </div>
       {showSuccessMessage && (
