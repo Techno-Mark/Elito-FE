@@ -25,7 +25,7 @@ const Stepper: React.FC<StepProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-row lg:flex-wrap lg:flex-col items-center text-center ${className} ${
+      className={`flex flex-wrap flex-col items-center text-center ${className} ${
         active && styles.active
       }`}
     >
@@ -41,7 +41,7 @@ const Stepper: React.FC<StepProps> = ({
         )}
         {children}
       </div>
-      <div className={`w-[201px] text-center max-w-full ${stepBoxClass}`}>
+      <div className={`md:w-[201px] text-center max-w-full ${stepBoxClass}`}>
         <h3
           className={`text-[#404040] font-normal font-poppins ${styles.stepTitle} ${titleClass}`}
         >

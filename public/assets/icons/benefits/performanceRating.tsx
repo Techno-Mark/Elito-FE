@@ -4,6 +4,7 @@ import { IconBaseProps } from "react-icons";
 const PerformanceRating: React.FC<IconBaseProps> = ({ className }) => {
   return (
     <svg
+      className={className}
       width="57"
       height="57"
       viewBox="0 0 57 57"

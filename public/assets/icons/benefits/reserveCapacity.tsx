@@ -4,6 +4,7 @@ import { IconBaseProps } from "react-icons";
 const ReserveCapacity: React.FC<IconBaseProps> = ({ className }) => {
   return (
     <svg
+      className={className}
       width="79"
       height="61"
       viewBox="0 0 79 61"

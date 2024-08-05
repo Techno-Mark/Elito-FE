@@ -167,7 +167,9 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
               />
               <label
                 htmlFor="acceptTerms"
-                className={`pl-2 font-medium text-left leading-normal`}
+                className={`pl-2 font-medium text-left leading-normal ${
+                  varient === "dark" && "text-[rgba(64,64,64,0.8)]"
+                }`}
               >
                 I agree to receive promotional calls / SMS / WhatsApp and emails
                 from Elito.

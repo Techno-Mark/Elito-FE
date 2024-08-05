@@ -4,6 +4,7 @@ import { IconBaseProps } from "react-icons";
 const LongerShelfLife: React.FC<IconBaseProps> = ({ className }) => {
   return (
     <svg
+    className={className}
       width="39"
       height="52"
       viewBox="0 0 39 52"

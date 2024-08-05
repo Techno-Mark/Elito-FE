@@ -1,8 +1,7 @@
-import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
-import styles from "./heroBanner.module.css";
 import CountryDropdown from "../CountryDropdown/CountryDropdown";
+import styles from "./heroBanner.module.css";
 
 const HeroBanner = () => {
   const settingsHero = {
@@ -15,37 +14,37 @@ const HeroBanner = () => {
     autoplaySpeed: 5000,
   };
   return (
-    <section className="relative">
+    <section className={`relative bg-white ${styles.heroBannerNewLanding}`}>
       <Slider
         {...settingsHero}
         className="max-w-screen overflow-hidden newHeroBanner"
       >
-        <div className="flex hero-section min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 firstHeroBg">
-          <div className="flex flex-col justify-center items-start w-full md:w-1/2">
-            <h4 className="text-[30px] text-white font-normal">
+        <div className="flex hero-section min-h-[340px] md:min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 firstHeroBg">
+          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
+            <h4 className="text-[14px] md:text-[30px] text-white font-normal">
               Gear Up Your Business with
             </h4>
-            <h3 className="text-white text-[80px] font-semibold leading-none">
+            <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
               Long-Lasting Automotive Batteries
             </h3>
           </div>
         </div>
-        <div className="flex hero-section min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 secondHeroBg">
-          <div className="flex flex-col justify-center items-start w-full md:w-1/2">
-            <h4 className="text-[30px] text-white font-normal">
+        <div className="flex hero-section min-h-[340px] md:min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 secondHeroBg">
+          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
+            <h4 className="text-[14px] md:text-[30px] text-white font-normal">
               Gear Up Your Business with
             </h4>
-            <h3 className="text-white text-[80px] font-semibold leading-none">
+            <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
               Long-Lasting Automotive Batteries
             </h3>
           </div>
         </div>
-        <div className="flex hero-section min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 thirdHeroBg">
-          <div className="flex flex-col justify-center items-start w-full md:w-1/2">
-            <h4 className="text-[30px] text-white font-normal">
+        <div className="flex hero-section min-h-[340px] md:min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 thirdHeroBg">
+          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
+            <h4 className="text-[14px] md:text-[30px] text-white font-normal">
               Gear Up Your Business with
             </h4>
-            <h3 className="text-white text-[80px] font-semibold leading-none">
+            <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
               Long-Lasting Automotive Batteries
             </h3>
           </div>
@@ -53,7 +52,7 @@ const HeroBanner = () => {
       </Slider>
 
       <div
-        className={`bg-white rounded-lg p-5 lg:p-7 lg:absolute w-full lg:w-1/3 mt-6 md:mt-0 right-24 top-1/2 -translate-y-1/2 max-w-[455px] ${styles.contactForm}`}
+        className={`mx-auto md:mx-0 bg-white rounded-lg p-5 lg:p-7 lg:absolute w-full lg:w-1/3 mt-6 md:mt-0 lg:right-24 lg:top-1/2 -translate-y-1/2 max-w-[90%] md:max-w-[455px] ${styles.contactForm}`}
       >
         <div className="flex flex-col">
           <div className="w-full mb-3 md:mb-6">

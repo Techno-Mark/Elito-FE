@@ -72,7 +72,7 @@
 }
 
 @media only screen and (max-width:1023px) {
-    .stepDivider {
+    /* .stepDivider {
         width: 30%;
         top: auto;
         bottom: 45px;
@@ -83,5 +83,17 @@
 
     .stepperClass {
         margin-bottom: 5rem;
+    } */
+}
+
+@media only screen and (max-width:767px) {
+
+    .whyPartnerBlock>div {
+        margin: 0 0 15px;
+        max-width: 100%;
+    }
+
+    .whyPartnerBlock>div h4 {
+        font-size: 14px;
     }
 }
