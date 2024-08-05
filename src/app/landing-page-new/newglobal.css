@@ -1,0 +1,66 @@
+.container {
+    max-width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firstHeroBg {
+    background-image: url("/images/AutomotiveBatteries.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.secondHeroBg {
+    background-image: url("/images/DistributionPartner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.thirdHeroBg {
+    background-image: url("/images/WeatherConditions.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-themeRed {
+    color: #D30300;
+}
+
+.newHeroBanner .slick-dots {
+    bottom: 10px;
+}
+
+.newHeroBanner .slick-dots li,
+.newHeroBanner .slick-dots li button,
+.newHeroBanner .slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    content: '';
+}
+
+.newHeroBanner .slick-dots li button:before {
+    opacity: 1;
+    border: 2px solid #fff;
+}
+
+.newHeroBanner .slick-dots li.slick-active button:before {
+    background: #fff;
+}
+
+/* criteriaBattery */
+
+.criteriaBattery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/criteriaBattery.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}

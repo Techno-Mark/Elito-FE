@@ -2,14 +2,14 @@
   "needs": [
     {
       "id": "1",
-      "src": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1715924532/elito-batteries/home/z1io0otjykvprsoufbnn.svg",
-      "title": "Cars/SUV Battery",
-      "description": "Engineered to meet the demands of safety, durability, and dependable performance, these batteries are designed for advanced technology new-gen cars. ",
+      "src": "/images/carSuvBattery.jpg",
+      "title": "Cars/SUV Battery",
+      "description": "Engineered to meet the demands of safety, durability, and dependable performance, these batteries are designed for advanced technology new-gen cars.",
       "link": "/products/car-suv-battery"
     },
     {
       "id": "2",
-      "src": "https://res.cloudinary.com/remind-cents-cloud/image/upload/v1716206006/elito-batteries/products/u3kaevme6ngopnxvorul.svg",
+      "src": "/images/truckTractorBattery.jpg",
       "title": "Truck/Tractor Battery",
       "description": "Crafted to withstand rough terrains, and extreme climates, and handle heavy loads to offer reliable power and longevity even in harshest conditions.",
       "link": "/products/truck-tractor-battery"
