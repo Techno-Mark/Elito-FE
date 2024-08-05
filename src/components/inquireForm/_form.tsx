@@ -178,7 +178,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
 
         <button
           type="submit"
-          className={`rounded-lg text-[12px] bg-[#D30300] py-3 px-6`}
+          className={`rounded-lg text-[12px] bg-[#D30300] py-3 px-6 font-poppins font-bold`}
         >
           Submit
         </button>

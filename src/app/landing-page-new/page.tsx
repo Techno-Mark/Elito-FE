@@ -3,12 +3,10 @@
 import AccordionGroup from "@/components/accordion/accordiongroup";
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import InquireForm from "@/components/inquireForm/inquireForm";
+import Stepper from "@/components/stepper/stepper";
 import { default as needs } from "@/data/home.json";
-import { useAnimation } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "swiper/css";
@@ -16,6 +14,13 @@ import "swiper/css/pagination";
 import { Aftermarket } from "../../../public/assets/icons/Aftermarket";
 import ArrowDown from "../../../public/assets/icons/arrowDown";
 import AutoChargeRetention from "../../../public/assets/icons/benefits/autoChargeRetention";
+import LongerShelfLife from "../../../public/assets/icons/benefits/longerShelfLife";
+import PerformanceRating from "../../../public/assets/icons/benefits/performanceRating";
+import ReserveCapacity from "../../../public/assets/icons/benefits/reserveCapacity";
+import Terrains from "../../../public/assets/icons/benefits/Terrains";
+import WaterLoss from "../../../public/assets/icons/benefits/waterLoss";
+import WeatherConditions from "../../../public/assets/icons/benefits/weatherConditions";
+import ZeroMaintenance from "../../../public/assets/icons/benefits/zeroMaintenance";
 import Distributorship from "../../../public/assets/icons/Distributorship";
 import Entrepreneur from "../../../public/assets/icons/Entrepreneur";
 import ImportExport from "../../../public/assets/icons/importExport";
@@ -25,45 +30,8 @@ import Point from "../../../public/assets/icons/point";
 import QualityCheck from "../../../public/assets/icons/QualityCheck";
 import RetailChain from "../../../public/assets/icons/RetailChain";
 import Wholesaler from "../../../public/assets/icons/Wholesaler";
-import LongerShelfLife from "../../../public/assets/icons/benefits/longerShelfLife";
-import ZeroMaintenance from "../../../public/assets/icons/benefits/zeroMaintenance";
-import WeatherConditions from "../../../public/assets/icons/benefits/weatherConditions";
-import ReserveCapacity from "../../../public/assets/icons/benefits/reserveCapacity";
-import PerformanceRating from "../../../public/assets/icons/benefits/performanceRating";
-import Terrains from "../../../public/assets/icons/benefits/Terrains";
-import WaterLoss from "../../../public/assets/icons/benefits/waterLoss";
-import Stepper from "@/components/stepper/stepper";
 
 export default function Home() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
-  const [activeSlide, setActiveSlide] = useState(0);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "0",
-    autoplay: true,
-    autoplaySpeed: 2500,
-    beforeChange: (current: number, next: number) => {
-      setActiveSlide(next + 1);
-    },
-  };
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, scale: 1 });
-    }
-  }, [controls, inView]);
-
   const faqItems = [
     {
       title: "Who can become an Elito Battery distributor? ",
@@ -231,7 +199,7 @@ export default function Home() {
           <div className="container max-w-[1580px] px-4 mx-auto">
             <div className="flex justify-between items-center text-[#404040]">
               <h4 className="text-[40px] leading-none max-w-[665px] font-normal">
-                Here's what you must do to
+                Here&apos;s what you must do to
                 <strong className="block font-semibold">
                   further comply with our process and requirements.
                 </strong>
@@ -257,7 +225,7 @@ export default function Home() {
               </h4>
               <p className="block font-poppins text-center text-[#737273] text-xl mb-6 mx-auto">
                 An ideal Elito automotive battery distributor needs to meet the
-                manufacturer's requirements in terms of the following:
+                manufacturer&apos;s requirements in terms of the following:
               </p>
             </div>
             <div className="flex flex-col max-w-[770px] mx-auto lg:flex-row justify-between items-center lg:items-start lg:space-x-4">
@@ -357,11 +325,11 @@ export default function Home() {
               to the distinct requirements of the automobile industry. Here are
               the types of batteries that we offer.
             </p>
-            <div className="pb-10 md:pb-16 flex justify-center flex-col lg:flex-row">
+            <div className="pb-10 md:pb-16 flex justify-between flex-col lg:flex-row">
               {needs.needs?.map((item: any, index: any) => (
                 <Link
                   href={item.link}
-                  className="md:w-[50%] relative mx-6 max-w-[627px]"
+                  className="md:w-[50%] relative odd:mr-6 even:ml-6 max-w-[627px]"
                   key={item.title}
                 >
                   <div className="rounded-t-lg">
