@@ -1,0 +1,21 @@
+.checkmark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(115, 114, 115, 0.4);
+    border-radius: 3px;
+    position: relative;
+}
+
+.checkboxInput:checked~.checkmark {
+    background: #D30300;
+    border-color: #D30300;
+}
+
+.whiteCheckBox .checkmark {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.whiteCheckBox .checkboxInput:checked~.checkmark {
+    background: white;
+    border-color: white;
+}
