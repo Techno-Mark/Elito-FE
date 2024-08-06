@@ -4,6 +4,7 @@ import CountryDropdown from "../CountryDropdown/CountryDropdown";
 import * as Yup from "yup";
 import { EnquiryLead } from "@/api/enquiry";
 import Checkbox from "../Fields/CheckBox";
+import InputField from "../Fields/InputField";
 // import Button from "../button/button";
 // import CountryDropdown from "../countryDropdown/countryDropdown";
 // import Checkbox from "../Fields/CheckBox";
@@ -103,12 +104,13 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
           >
             <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
               <Field
+                as={InputField}
                 id="grid-first-name"
                 name="fullName"
                 type="text"
                 placeholder="Full Name"
                 required={true}
-                className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 focus:outline-none text-[12px] font-medium ${
+                className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 focus:outline-none text-xs text-[#404040] font-medium ${
                   getIn(errors, "fullName") && getIn(touched, "fullName")
                     ? "border-red-500 mb-0.5"
                     : ""
@@ -129,7 +131,8 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                       className="!border-[rgba(115,114,115,0.4)] rounded-lg bg-white !py-1 font-medium mb-0.5 h-[36px]"
                     />
                   </div>
-                  <input
+                  <Field
+                    as={InputField}
                     id="grid-phoneNumber"
                     name="phoneNumber"
                     type="text"
@@ -142,26 +145,30 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                         setFieldValue("phoneNumber", value);
                       }
                     }}
-                    className={`block w-full border border-[#73727366] text-[12px] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none`}
+                    className={`block w-full border border-[#73727366] text-xs text-[#404040] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none`}
                   />
                 </div>
               </div>
             </div>
             <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
-              <input
+              <Field
+                as={InputField}
                 id="emailId"
                 name="emailId"
                 type="email"
                 placeholder="Email Address"
                 required={true}
-                className={`block w-full border border-[#73727366] rounded-lg text-[12px] font-medium py-2 px-4 focus:outline-none`}
+                className={`block w-full border border-[#73727366] rounded-lg text-xs text-[#404040] font-medium py-2 px-4 focus:outline-none`}
               />
             </div>
             <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
-              <input
+              <Field
+                as={InputField}
+                id="city"
                 name="city"
                 placeholder="City"
-                className={`w-full flex items-center justify-between text-[12px] font-medium border border-[#73727366] rounded-lg py-2 px-4 cursor-pointer focus:outline-none`}
+                required={true}
+                className={`w-full flex items-center justify-between text-xs text-[#404040] font-medium border border-[#73727366] rounded-lg py-2 px-4 cursor-pointer focus:outline-none`}
               />
             </div>
             <div className="w-full md:mr-2 mb-2 md:mb-0 lg:max-w-[330px]">
@@ -181,8 +188,10 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                   />
                   <label
                     htmlFor="acceptTerms"
-                    className={`pl-2 font-medium text-left leading-normal ${
-                      varient === "dark" && "text-[rgba(64,64,64,0.8)]"
+                    className={`pl-2 font-medium text-left leading-normal md:text-[12px] ${
+                      varient === "dark"
+                        ? "text-[rgba(64,64,64,0.8)]"
+                        : "text-white"
                     }`}
                   >
                     I agree to receive promotional calls / SMS / WhatsApp and

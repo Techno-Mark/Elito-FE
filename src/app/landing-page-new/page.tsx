@@ -84,8 +84,8 @@ export default function Home() {
       <HeroBanner />
       <div className="relative bg-white">
         {/* Partner section  */}
-        <section className="info bg-white text-black px-5 py-10 lg:p-24 flex flex-col max-w-[1113px] mx-auto">
-          <h2 className="text-themeRed text-3xl lg:text-4xl font-bold text-center pb-[10px]">
+        <section className="info bg-white text-black px-5 py-10 lg:py-16 flex flex-col max-w-[1113px] mx-auto">
+          <h2 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-[10px]">
             Why Partner with Us?
           </h2>
           <p className="font-poppins text-[#333333] text-justify lg:text-center mb-8">
@@ -119,10 +119,10 @@ export default function Home() {
         </section>
         {/* Who we Are */}
         <section className={`relative pb-16`}>
-          <div className="container max-w-[1580px] px-4 mx-auto pb-10 md:pb-0">
+          <div className="container pb-10 md:pb-0">
             <div className="flex justify-between items-center flex-wrap">
               <div className="text-center md:text-left my-8">
-                <h4 className="font-poppins text-[#737273] text-base md:text-xl">
+                <h4 className="font-poppins text-[#737273] text-sm md:text-lg">
                   Wondering if you can be the one?
                 </h4>
                 <h3 className="text-themeRed text-[24px] md:text-[45px] font-semibold leading-none">
@@ -131,7 +131,7 @@ export default function Home() {
                 </h3>
               </div>
               <Image
-                className="max-w-[267px] md:max-w-[389px] h-auto mx-auto md:mx-0"
+                className="max-w-[267px] md:max-w-[350px] w-full h-auto mx-auto md:mx-0"
                 src="/images/whoWeAre.png"
                 alt="Who We Are"
                 width={389}
@@ -146,9 +146,9 @@ export default function Home() {
 
         {/* Criteria Battery Distributor */}
         <section className="relative bg-[#6C6C6C] criteriaBattery py-10 md:py-16">
-          <div className="container max-w-[1580px] mx-auto relative px-4">
+          <div className="container relative px-4 text-white">
             <div className="w-full lg:w-1/2 text-center mx-auto pb-8">
-              <h4 className="font-semibold text-[24px] md:text-[40px] leading-none pb-2">
+              <h4 className="font-semibold text-[24px] md:text-[30px] leading-none pb-2">
                 Criteria for Becoming
                 <span className="block">
                   an Elito Automotive Battery Distributor
@@ -164,7 +164,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <Wholesaler className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Existing Distributor/Wholesaler
                 </p>
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <ImportExport className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Export-Import Firm
                 </p>
               </div>
@@ -180,7 +180,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <RetailChain className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Large Retail Chain
                 </p>
               </div>
@@ -188,7 +188,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <Entrepreneur className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Entrepreneur
                 </p>
               </div>
@@ -196,7 +196,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <Aftermarket className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Automotive Aftermarket Trading Firm
                 </p>
               </div>
@@ -205,16 +205,16 @@ export default function Home() {
         </section>
 
         <section className={`relative py-10 md:py-16`}>
-          <div className="container max-w-[1580px] px-4 mx-auto">
+          <div className="container px-4">
             <div className="flex flex-wrap justify-between items-center text-[#404040]">
-              <h4 className="text-[22px] md:text-[40px] text-center md:text-left leading-none max-w-[665px] font-normal">
+              <h4 className="text-[22px] md:text-[30px] text-center md:text-left leading-none max-w-[665px] font-normal">
                 Here&apos;s what you must do to
                 <strong className="block font-semibold">
                   further comply with our process and requirements.
                 </strong>
               </h4>
               <Image
-                className="max-w-[267px] md:max-w-[389px] h-auto mx-auto md:mx-0"
+                className="max-w-[267px] md:max-w-[350px] w-full h-auto mx-auto md:mx-0"
                 src="/images/processRequirement.png"
                 alt="Who We Are"
                 width={389}
@@ -227,13 +227,13 @@ export default function Home() {
         <section className="py-10">
           <div className="container">
             <div className="max-w-[770px] mx-auto mb-8 md:mb-16">
-              <h4 className="text-themeRed text-2xl lg:text-4xl font-bold text-center px-3 md:px-0 pb-2">
+              <h4 className="text-themeRed text-2xl lg:text-[30px] font-bold text-center px-3 md:px-0 pb-2">
                 Wondering What You Must Do to{" "}
                 <span className="md:block">
                   Become an Elito Battery Distributor?
                 </span>
               </h4>
-              <p className="block font-poppins text-center text-[#737273] text-[14px] md:text-xl mb-6 mx-auto">
+              <p className="block font-poppins text-center text-[#737273] text-[14px] md:text-lg mb-6 mx-auto">
                 An ideal Elito automotive battery distributor needs to meet the
                 manufacturer&apos;s requirements in terms of the following:
               </p>
@@ -259,9 +259,9 @@ export default function Home() {
         </section>
 
         <section className={`relative py-10 md:py-16`}>
-          <div className="container max-w-[1580px] px-4 mx-auto">
+          <div className="container px-4">
             <div className="flex flex-wrap justify-between items-center text-[#404040] px-4 md:px-0">
-              <h4 className="text-[22px] md:text-[40px] leading-none max-w-[665px] font-normal text-center md:text-left">
+              <h4 className="text-[22px] md:text-[30px] leading-none max-w-[665px] font-normal text-center md:text-left">
                 Elito Battery distributorship comes with ample benefits that
                 would
                 <strong className="block font-semibold">
@@ -269,7 +269,7 @@ export default function Home() {
                 </strong>
               </h4>
               <Image
-                className="max-w-[267px] md:max-w-[389px] h-auto mx-auto md:mx-0"
+                className="max-w-[267px] md:max-w-[350px] w-full h-auto mx-auto md:mx-0"
                 src="/images/notchhigher.png"
                 alt="Who We Are"
                 width={389}
@@ -280,9 +280,9 @@ export default function Home() {
         </section>
 
         <section className="relative bg-[#6C6C6C] criteriaBattery py-10 md:py-16">
-          <div className="container max-w-[1580px] mx-auto relative px-4">
+          <div className="container relative px-4">
             <div className="w-full lg:w-3/5 text-center mx-auto pb-8">
-              <h4 className="font-semibold text-[22px] md:text-[40px] leading-none pb-2">
+              <h4 className="font-semibold text-[22px] md:text-[30px] leading-none pb-2">
                 Discover the Multifold Benefits of Becoming an Elito Battery
                 Distributor
               </h4>
@@ -297,7 +297,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <Distributorship className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Sole Distributorship Country and State-wise
                 </p>
               </div>
@@ -305,7 +305,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <ImportExport className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   High ROI
                 </p>
               </div>
@@ -313,7 +313,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <RetailChain className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Quick Sales Turnover
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default function Home() {
                 <div className="bg-white border border-2 md:border-4 border-[#EDEDED] rounded-full p-3 md:p-6 max-w-[62px] max-h-[62px] md:max-w-[100px] md:max-h-[100px]">
                   <Entrepreneur className="w-full h-auto" />
                 </div>
-                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[22px]">
+                <p className="font-poppins pt-3 md:pt-5 text-[14px] md:text-[18px]">
                   Marketing and Branding Support
                 </p>
               </div>
@@ -332,15 +332,15 @@ export default function Home() {
         {/* Product cards  */}
         <section className="cards bg-white text-black py-10 md:py-16">
           <div className="container">
-            <h3 className="text-themeRed text-[22px] lg:text-4xl font-bold text-center pb-2">
+            <h3 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-2">
               Explore Our Range of Products
             </h3>
-            <p className="block font-poppins max-w-[880px] text-center text-[#737273] text-[14px] md:text-xl mb-8 mx-auto">
+            <p className="block font-poppins max-w-[880px] text-center text-[#737273] text-[14px] md:text-lg mb-8 mx-auto">
               Elito automotive batteries come in a range of two types that cater
               to the distinct requirements of the automobile industry. Here are
               the types of batteries that we offer.
             </p>
-            <div className="md:pb-16 flex justify-around max-w-[1470px] mx-auto flex-col lg:flex-row">
+            <div className="md:pb-16 flex justify-around flex-col lg:flex-row">
               {needs.needs?.map((item: any, index: any) => (
                 <Link
                   href={item.link}
@@ -360,7 +360,7 @@ export default function Home() {
                     <h3 className="text-themeRed text-[14px] md:text-3xl text-center py-2 md:py-4 font-semibold">
                       {item.title}
                     </h3>
-                    <p className="font-poppins w-[90%] text-center mx-auto pb-4 text-[12px] md:text-xl">
+                    <p className="font-poppins w-[90%] text-center mx-auto pb-4 text-[12px] md:text-lg">
                       {item.description}
                     </p>
                   </div>
@@ -372,8 +372,8 @@ export default function Home() {
 
         {/* Product Manufacturing */}
         <section className="mb-8 md:mb-16">
-          <div className="container !max-w-[1470px]">
-            <h3 className="text-themeRed text-[22px] lg:text-4xl font-bold text-center pb-6 md:pb-12 max-w-[660px] mx-auto">
+          <div className="container">
+            <h3 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-6 md:pb-12 max-w-[600px] mx-auto">
               Here&apos;s All You Need to Know About Our Product Manufacturing
             </h3>
             <div className="flex flex-wrap md:flex-nowrap justify-between items-center mb-8 md:mb-20">
@@ -384,7 +384,7 @@ export default function Home() {
                 width={615}
                 height={441}
               />
-              <div className="font-poppins max-w-[769px] text-[#333333] text-base md:text-xl md:ml-5 mt-8 md:mt-0 text-justify md:text-left">
+              <div className="font-poppins max-w-[769px] text-[#333333] text-sm md:text-lg md:ml-5 mt-8 md:mt-0 text-justify md:text-left">
                 <p>
                   Elito Batteries, manufactured by Amara Raja Batteries Limited,
                   caters to both Indian and international markets and is one of
@@ -418,10 +418,10 @@ export default function Home() {
         <section className="py-6 md:py-10">
           <div className="container">
             <div className="max-w-[780px] mx-auto">
-              <h4 className="text-themeRed text-xl lg:text-4xl font-bold text-center pb-2">
+              <h4 className="text-themeRed text-xl lg:text-[30px] font-bold text-center pb-2">
                 Benefits of Using Elito Battery
               </h4>
-              <p className="block font-poppins max-w-[880px] text-center text-[#737273] text-base md:text-xl mb-6 mx-auto">
+              <p className="block font-poppins max-w-[880px] text-center text-[#737273] text-sm md:text-lg mb-6 mx-auto">
                 While our loyal customers are dedicated to choosing Elito
                 battery over others, there are a myriad of new customers who
                 discover its significant benefits.
@@ -534,26 +534,26 @@ export default function Home() {
               <h3 className="pb-2 text-[22px] md:text-4xl font-semibold">
                 Features of Elito Battery
               </h3>
-              <p className="leading-normal text-[14px] md:text-xl">
+              <p className="leading-normal text-[14px] md:text-lg">
                 Here are some of the key features of Elito battery that make it
                 a No.1 choice for our customers across the globe.
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center md:justify-between max-w-[1100px] mx-auto mt-10 md:my-10">
               <ul className="w-full lg:w-1/3 max-w-[300px]">
-                <li className="flex items-center text-white font-poppins text-[17px] md:text-xl font-normal hover:font-bold mb-8">
+                <li className="flex items-center text-white font-poppins text-[17px] md:text-lg font-normal hover:font-bold mb-8">
                   <Point className="md:w-[33px] md:h-[33px] w-[21px] h-[21px]" />
                   <span className="pl-4 md:pl-6 leading-none">
                     Sealed Maintenance Free Battery
                   </span>
                 </li>
-                <li className="flex items-center text-white font-poppins text-[17px] md:text-xl font-normal hover:font-bold mb-8">
+                <li className="flex items-center text-white font-poppins text-[17px] md:text-lg font-normal hover:font-bold mb-8">
                   <Point className="md:w-[33px] md:h-[33px] w-[21px] h-[21px]" />
                   <span className="pl-4 md:pl-6 leading-none">
                     High Cranking Power
                   </span>
                 </li>
-                <li className="flex items-center text-white font-poppins text-[17px] md:text-xl font-normal hover:font-bold mb-8">
+                <li className="flex items-center text-white font-poppins text-[17px] md:text-lg font-normal hover:font-bold mb-8">
                   <Point className="md:w-[33px] md:h-[33px] w-[21px] h-[21px]" />
                   <span className="pl-4 md:pl-6 leading-none">
                     High Heat Tolerance
@@ -574,19 +574,19 @@ export default function Home() {
                 height={320}
               />
               <ul className="w-full lg:w-1/3 max-w-[300px] order-2 lg:order-3">
-                <li className="flex items-center text-white font-poppins text-[17px] md:text-xl font-normal hover:font-bold mb-8">
+                <li className="flex items-center text-white font-poppins text-[17px] md:text-lg font-normal hover:font-bold mb-8">
                   <Point className="md:w-[33px] md:h-[33px] w-[21px] h-[21px]" />
                   <span className="pl-4 md:pl-6 leading-none">
                     Top-Notch Performance Markings
                   </span>
                 </li>
-                <li className="flex items-center text-white font-poppins text-[17px] md:text-xl font-normal hover:font-bold mb-8">
+                <li className="flex items-center text-white font-poppins text-[17px] md:text-lg font-normal hover:font-bold mb-8">
                   <Point className="md:w-[33px] md:h-[33px] w-[21px] h-[21px]" />
                   <span className="pl-4 md:pl-6 leading-none">
                     Vibration Resistant
                   </span>
                 </li>
-                <li className="flex items-center text-white font-poppins text-[17px] md:text-xl font-normal hover:font-bold mb-8">
+                <li className="flex items-center text-white font-poppins text-[17px] md:text-lg font-normal hover:font-bold mb-8">
                   <Point className="md:w-[33px] md:h-[33px] w-[21px] h-[21px]" />
                   <span className="pl-4 md:pl-6 leading-none">
                     Single Vent Cover
@@ -607,10 +607,10 @@ export default function Home() {
         <section className="py-10 mb-20">
           <div className="container">
             <div className="max-w-[780px] mx-auto mb-8 md:mb-16">
-              <h4 className="text-themeRed text-[22px] lg:text-4xl font-bold text-center pb-2">
+              <h4 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-2">
                 Frequently Asked Questions
               </h4>
-              <p className="block font-poppins text-center text-[#737273] text-base md:text-xl mb-6 mx-auto">
+              <p className="block font-poppins text-center text-[#737273] text-sm md:text-lg mb-6 mx-auto">
                 Still have questions and queries?
                 <span className="block">
                   We are here to answer your frequently asked questions!

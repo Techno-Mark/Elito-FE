@@ -7,6 +7,7 @@ import * as Yup from "yup";
 import { Field, Form, Formik, FormikHelpers, getIn } from "formik";
 import { EnquiryLead } from "@/api/enquiry";
 import Checkbox from "../Fields/CheckBox";
+import InputField from "../Fields/InputField";
 interface FormValues {
   fullName: string;
   countryCode: string;
@@ -95,34 +96,40 @@ const HeroBanner = () => {
         {...settingsHero}
         className="max-w-screen overflow-hidden newHeroBanner"
       >
-        <div className="flex hero-section min-h-[340px] md:min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 firstHeroBg">
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
-            <h4 className="text-[14px] md:text-[30px] text-white font-normal">
-              Gear Up Your Business with
-            </h4>
-            <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
-              Long-Lasting Automotive Batteries
-            </h3>
+        <div className="flex hero-section min-h-[340px] md:min-h-[600px] home-hero-bg p-5 lg:py-16 firstHeroBg">
+          <div className="container">
+            <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
+              <h4 className="text-[14px] md:text-[30px] text-white font-normal">
+                Gear Up Your Business with
+              </h4>
+              <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
+                Long-Lasting Automotive Batteries
+              </h3>
+            </div>
           </div>
         </div>
-        <div className="flex hero-section min-h-[340px] md:min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 secondHeroBg">
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
-            <h4 className="text-[14px] md:text-[30px] text-white font-normal">
-              Gear Up Your Business with
-            </h4>
-            <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
-              Long-Lasting Automotive Batteries
-            </h3>
+        <div className="flex hero-section min-h-[340px] md:min-h-[600px] home-hero-bg p-5 lg:py-16 secondHeroBg">
+          <div className="container">
+            <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
+              <h4 className="text-[14px] md:text-[30px] text-white font-normal">
+                Gear Up Your Business with
+              </h4>
+              <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
+                Long-Lasting Automotive Batteries
+              </h3>
+            </div>
           </div>
         </div>
-        <div className="flex hero-section min-h-[340px] md:min-h-[540px] home-hero-bg p-5 lg:py-16 lg:px-24 thirdHeroBg">
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
-            <h4 className="text-[14px] md:text-[30px] text-white font-normal">
-              Gear Up Your Business with
-            </h4>
-            <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
-              Long-Lasting Automotive Batteries
-            </h3>
+        <div className="flex hero-section min-h-[340px] md:min-h-[600px] home-hero-bg p-5 lg:py-16 thirdHeroBg">
+          <div className="container">
+            <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2">
+              <h4 className="text-[14px] md:text-[30px] text-white font-normal">
+                Gear Up Your Business with
+              </h4>
+              <h3 className="text-[32px] text-white text-center md:text-left md:text-[80px] font-semibold leading-none">
+                Long-Lasting Automotive Batteries
+              </h3>
+            </div>
           </div>
         </div>
       </Slider>
@@ -130,6 +137,9 @@ const HeroBanner = () => {
       <div
         className={`mx-auto md:mx-0 bg-white rounded-lg p-5 lg:p-7 lg:absolute w-full lg:w-1/3 mt-6 md:mt-0 lg:right-24 lg:top-1/2 -translate-y-1/2 max-w-[90%] md:max-w-[455px] ${styles.contactForm}`}
       >
+        <h3 className="text-themeRed pb-[30px] font-semibold font-poppins text-[20px]">
+          Become an Exclusive Distributor
+        </h3>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -140,12 +150,13 @@ const HeroBanner = () => {
             <Form className="w-full">
               <div className="flex flex-col">
                 <div className="w-full mb-3 md:mb-6">
-                  <input
+                  <Field
+                    as={InputField}
                     id="grid-first-name"
                     name="fullName"
                     placeholder="Full Name"
                     type="text"
-                    required={true}
+                    // required={true}
                     className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 focus:outline-none`}
                   />
                 </div>
@@ -159,7 +170,8 @@ const HeroBanner = () => {
                         className="!border-[rgba(115,114,115,0.4)]"
                       />
                     </div>
-                    <input
+                    <Field
+                      as={InputField}
                       id="grid-phoneNumber"
                       placeholder="Mobile Number"
                       name="phoneNumber"
@@ -170,7 +182,7 @@ const HeroBanner = () => {
                         const { value } = e.target;
                         if (/^\d{0,10}$/.test(value)) {
                           // Update formik value if it passes validation
-                          // setFieldValue("phoneNumber", value);
+                          setFieldValue("phoneNumber", value);
                         }
                       }}
                       className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 ml-2 focus:outline-none `}
@@ -179,7 +191,8 @@ const HeroBanner = () => {
                 </div>
               </div>
               <div className="w-full mb-3 md:mb-6">
-                <input
+                <Field
+                  as={InputField}
                   id="emailId"
                   name="emailId"
                   type="email"
@@ -189,9 +202,11 @@ const HeroBanner = () => {
                 />
               </div>
               <div className="w-full mb-3 md:mb-6">
-                <input
+                <Field
+                  as={InputField}
                   name="city"
-                  className={`w-full flex justify-between px-2 py-2 leading-tight bg-white text-[var(--text-color)] font-medium border border-gray-300 rounded-lg cursor-pointer focus:outline-none min-h-[45px] items-center`}
+                  required={true}
+                  className={`w-full flex justify-between px-4 py-2 leading-tight bg-white text-[#404040] font-medium border border-gray-300 rounded-lg cursor-pointer focus:outline-none min-h-[45px] items-center`}
                   placeholder="City"
                 />
               </div>
@@ -218,7 +233,7 @@ const HeroBanner = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#D30300] rounded-md w-full justify-center text-base font-semibold flex items-center !py-3 !px-5"
+                className="bg-[#D30300] rounded-md w-full justify-center text-base font-semibold flex items-center !py-3 !px-5 text-white"
               >
                 Submit
               </button>
