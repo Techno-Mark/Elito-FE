@@ -97,21 +97,21 @@ export default function Home() {
           <div className="font-poppins text-[#333333] flex flex-col lg:flex-row justify-center whyPartnerBlock">
             <div className="flex flex-col justify-between items-center p-[23px] md:py-6 md:px-5 lg:px-11 lg:py-12 max-w-[302px] text-center rounded-lg bg-[#404040] text-white hover:bg-[#D30300]">
               <QualityCheck />
-              <h4 className="text-xl font-normal mt-5">
+              <h4 className="text-xl font-normal mt-5 text-white">
                 Committed to Quality and Service
               </h4>
             </div>
 
             <div className="flex flex-col justify-between items-center mx-[20px] p-[23px] md:py-6 md:px-5 lg:px-11 lg:py-12 max-w-[302px] text-center rounded-lg bg-[#404040] text-white hover:bg-[#D30300]">
               <IndustryLeader />
-              <h4 className="text-xl font-normal mt-5">
+              <h4 className="text-xl font-normal mt-5 text-white">
                 Trusted by Industry Leaders
               </h4>
             </div>
 
             <div className="flex flex-col justify-between items-center p-[23px] md:py-6 md:px-5 lg:px-11 lg:py-12 max-w-[302px] text-center rounded-lg bg-[#404040] text-white hover:bg-[#D30300]">
               <Performance />
-              <h4 className="text-xl font-normal mt-5">
+              <h4 className="text-xl font-normal mt-5 text-white">
                 35+ Years of Proven Performance
               </h4>
             </div>
@@ -280,7 +280,7 @@ export default function Home() {
         </section>
 
         <section className="relative bg-[#6C6C6C] criteriaBattery py-10 md:py-16">
-          <div className="container relative px-4">
+          <div className="container relative px-4 text-white">
             <div className="w-full lg:w-3/5 text-center mx-auto pb-8">
               <h4 className="font-semibold text-[22px] md:text-[30px] leading-none pb-2">
                 Discover the Multifold Benefits of Becoming an Elito Battery

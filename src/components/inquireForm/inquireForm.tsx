@@ -22,7 +22,7 @@ const InquireForm = () => {
       <section
         className={`bg-[#404040] py-2 lg:sticky lg:bottom-0 ${styles.inquiryForm} hidden lg:block`}
       >
-        <div className="container max-w-[1580px] px-4 mx-auto">
+        <div className="container mx-auto">
           <InqForm />
         </div>
       </section>

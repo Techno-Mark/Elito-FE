@@ -52,7 +52,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
       .email("Invalid email address")
       .required("Email ID is required"),
     whoAmI: Yup.string().required("This field is required"),
-    city: Yup.number().required("City is required"),
+    city: Yup.string().required("City is required"),
     // acceptTerms: Yup.boolean().oneOf(
     //   [true],
     //   "You must accept the terms and conditions"
@@ -63,22 +63,36 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
     values: FormValues,
     { setFieldTouched, resetForm }: FormikHelpers<FormValues>
   ) => {
+    console.log("Hello");
+
     Object.keys(values).forEach((fieldName) => {
       setFieldTouched(fieldName, true);
     });
 
     try {
-      const params = {
-        fullName: values.fullName,
-        emails: [values.emailId],
-        phoneNumbers: {
-          code: values.countryCode,
-          value: values.phoneNumber.toString(),
-        },
+      const param = {
+        lastName: values.fullName,
+        phoneNumbers: [
+          {
+            type: "MOBILE",
+            code: "IN",
+            value: values.phoneNumber.toString(),
+            dialCode: values.countryCode || "+91",
+            primary: true,
+          },
+        ],
+        salutation: null,
+        emails: [
+          {
+            type: "OFFICE",
+            value: values.emailId,
+            primary: true,
+          },
+        ],
         city: values.city,
         dnd: values.acceptTerms,
       };
-      const response = await EnquiryLead(params);
+      const response = await EnquiryLead(param);
       if (response.ResponseStatus === "success") {
         resetForm();
         setShowSuccessMessage(true);
@@ -102,7 +116,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
               varient === "dark" ? "md:flex-col whitespace-normal" : ""
             }`}
           >
-            <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
+            <div className="w-full md:mr-2 mb-2 lg:max-w-[165px]">
               <Field
                 as={InputField}
                 id="grid-first-name"
@@ -116,13 +130,8 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                     : ""
                 }`}
               />
-              {getIn(errors, "fullName") && getIn(touched, "fullName") && (
-                <div className="text-red-500 font-medium">
-                  {getIn(errors, "fullName")}
-                </div>
-              )}
             </div>
-            <div className="w-full md:mr-2 mb-2 lg:max-w-[250px]">
+            <div className="w-full md:mr-2 mb-2 lg:max-w-[270px]">
               <div className="flex flex-col">
                 <div className="flex">
                   <div className="w-[80px] text-[12px]">
@@ -145,12 +154,17 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                         setFieldValue("phoneNumber", value);
                       }
                     }}
-                    className={`block w-full border border-[#73727366] text-xs text-[#404040] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none`}
+                    className={`block w-full max-w-[165px] border border-[#73727366] text-xs text-[#404040] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none ${
+                      getIn(errors, "phoneNumber") &&
+                      getIn(touched, "phoneNumber")
+                        ? "border-red-500"
+                        : ""
+                    }`}
                   />
                 </div>
               </div>
             </div>
-            <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
+            <div className="w-full md:mr-2 mb-2 lg:max-w-[165px]">
               <Field
                 as={InputField}
                 id="emailId"
@@ -158,20 +172,28 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                 type="email"
                 placeholder="Email Address"
                 required={true}
-                className={`block w-full border border-[#73727366] rounded-lg text-xs text-[#404040] font-medium py-2 px-4 focus:outline-none`}
+                className={`block w-full border border-[#73727366] rounded-lg text-xs text-[#404040] font-medium py-2 px-4 focus:outline-none ${
+                  getIn(errors, "emailId") && getIn(touched, "emailId")
+                    ? "border-red-500"
+                    : ""
+                }`}
               />
             </div>
-            <div className="w-full md:mr-2 mb-2 lg:max-w-[210px]">
+            <div className="w-full md:mr-2 mb-2 lg:max-w-[165px]">
               <Field
                 as={InputField}
                 id="city"
                 name="city"
                 placeholder="City"
                 required={true}
-                className={`w-full flex items-center justify-between text-xs text-[#404040] font-medium border border-[#73727366] rounded-lg py-2 px-4 cursor-pointer focus:outline-none`}
+                className={`w-full flex items-center justify-between text-xs text-[#404040] font-medium border border-[#73727366] rounded-lg py-2 px-4 cursor-pointer focus:outline-none${
+                  getIn(errors, "city") && getIn(touched, "city")
+                    ? "border-red-500"
+                    : ""
+                }`}
               />
             </div>
-            <div className="w-full md:mr-2 mb-2 md:mb-0 lg:max-w-[330px]">
+            <div className="w-full md:mr-2 mb-2 md:mb-0">
               <div className="text-left whitespace-normal">
                 <div className="flex items-base justify-center">
                   <Field
@@ -188,7 +210,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                   />
                   <label
                     htmlFor="acceptTerms"
-                    className={`pl-2 font-medium text-left leading-normal md:text-[12px] ${
+                    className={`pl-2 font-normal text-left leading-normal md:text-[11px] ${
                       varient === "dark"
                         ? "text-[rgba(64,64,64,0.8)]"
                         : "text-white"
@@ -202,8 +224,8 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
             </div>
 
             <button
-              type="submit"
-              className={`rounded-lg text-[12px] bg-[#D30300] py-3 px-6 font-poppins font-bold`}
+              // type="submit"
+              className={`rounded-lg text-[12px] bg-[#D30300] py-3 px-4 font-poppins font-bold text-white w-full max-w-[160px]`}
             >
               Submit
             </button>
