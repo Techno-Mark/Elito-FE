@@ -376,7 +376,7 @@ export default function Home() {
             <h3 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-6 lg:pb-12 max-w-[600px] mx-auto">
               Here&apos;s All You Need to Know About Our Product Manufacturing
             </h3>
-            <div className="flex flex-wrap md:flex-nowrap justify-between items-center mb-8 lg:mb-20">
+            <div className="flex flex-wrap md:flex-nowrap justify-center lg:justify-between items-center mb-8 lg:mb-20">
               <Image
                 className="rounded-lg w-full max-w-[340px] max-h-[270px] lg:max-w-[615px] lg:max-h-[441px] object-cover object-bottom md:mr-3 lg:mr-5"
                 src={"/images/productManufacturing.jpg"}
