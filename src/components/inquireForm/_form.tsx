@@ -51,7 +51,6 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
       .max(250, "Email Address cannot be longer than 250 characters.")
       .email("Invalid email address")
       .required("Email ID is required"),
-    whoAmI: Yup.string().required("This field is required"),
     city: Yup.string().required("City is required"),
     // acceptTerms: Yup.boolean().oneOf(
     //   [true],
@@ -63,8 +62,6 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
     values: FormValues,
     { setFieldTouched, resetForm }: FormikHelpers<FormValues>
   ) => {
-    console.log("Hello");
-
     Object.keys(values).forEach((fieldName) => {
       setFieldTouched(fieldName, true);
     });
@@ -93,7 +90,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
         dnd: values.acceptTerms,
       };
       const response = await EnquiryLead(param);
-      if (response.ResponseStatus === "success") {
+      if (response) {
         resetForm();
         setShowSuccessMessage(true);
         setTimeout(() => setShowSuccessMessage(false), 5000);

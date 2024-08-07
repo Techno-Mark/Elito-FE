@@ -1,17 +1,5 @@
 import axios from "axios";
-
 const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`;
-
-// interface EnqProps {
-//   fullName: string;
-//   emails: string[];
-//   phoneNumbers: {
-//     code: string;
-//     value: string;
-//   };
-//   city: string;
-//   dnd: boolean;
-// }
 
 interface EnqProps {
   lastName: string;
@@ -33,8 +21,13 @@ interface EnqProps {
 }
 
 export const EnquiryLead = async (body: EnqProps) => {
+  const headers = {
+    "api-key": "ca5d5c89-28fd-452b-adb8-cb7263cdd8d3:10770",
+  };
   try {
-    const response = await axios.post(`${API_URL}leads`, body);
+    const response = await axios.post(`${API_URL}leads`, body, {
+      headers: headers,
+    });
     return response.data;
   } catch (error) {
     throw new Error("Error fetching");

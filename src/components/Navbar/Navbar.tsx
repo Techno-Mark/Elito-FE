@@ -22,7 +22,7 @@ function Navbar() {
   const pathname = usePathname();
   const [headerHide, setHeaderHide] = useState(false);
   useEffect(() => {
-    if (pathname === "/landing-page-new") {
+    if (pathname === "/landing-page-new" || "/landing-page-new/thankyou") {
       setHeaderHide(true);
     }
   }, [pathname]);
