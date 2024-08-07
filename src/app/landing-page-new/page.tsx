@@ -204,7 +204,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`relative py-10 md:py-16`}>
+        <section className={`relative py-10 lg:py-16`}>
           <div className="container px-4">
             <div className="flex flex-wrap justify-center lg:justify-between items-center text-[#404040]">
               <h4 className="text-[22px] lg:text-[30px] text-center md:text-left leading-none md:max-w-[60%] lg:max-w-[665px] font-normal">
@@ -226,7 +226,7 @@ export default function Home() {
         {/* Become an Elito Battery Distributor */}
         <section className="py-10">
           <div className="container">
-            <div className="max-w-[770px] mx-auto mb-8 md:mb-16">
+            <div className="max-w-[770px] mx-auto mb-8 lg:mb-16">
               <h4 className="text-themeRed text-2xl lg:text-[30px] font-bold text-center px-3 md:px-0 pb-2">
                 Wondering What You Must Do to{" "}
                 <span className="md:block">
@@ -330,7 +330,7 @@ export default function Home() {
         </section>
 
         {/* Product cards  */}
-        <section className="cards bg-white text-black py-10 md:py-16">
+        <section className="cards bg-white text-black py-10 lg:py-16">
           <div className="container">
             <h3 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-2">
               Explore Our Range of Products
@@ -340,7 +340,7 @@ export default function Home() {
               to the distinct requirements of the automobile industry. Here are
               the types of batteries that we offer.
             </p>
-            <div className="lg:pb-16 flex justify-around flex-col md:flex-row">
+            <div className="lg:pb-16 flex justify-around flex-col md:flex-row items-center">
               {needs.needs?.map((item: any, index: any) => (
                 <Link
                   href={item.link}
@@ -357,10 +357,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="rounded-lg border border-[#333333] border-t-0 rounded-t-none py-[20px] lg:py-8">
-                    <h3 className="text-themeRed text-[14px] lg:text-3xl text-center py-2 lg:py-4 font-semibold">
+                    <h3 className="text-themeRed text-[14px] md:text-[18px] lg:text-3xl text-center py-2 lg:py-4 font-semibold">
                       {item.title}
                     </h3>
-                    <p className="font-poppins w-[95%] text-center mx-auto pb-4 text-[12px] lg:text-lg">
+                    <p className="font-poppins w-[95%] text-center mx-auto lg:pb-4 text-[12px] md:text-[14px] lg:text-lg">
                       {item.description}
                     </p>
                   </div>
@@ -378,7 +378,7 @@ export default function Home() {
             </h3>
             <div className="flex flex-wrap md:flex-nowrap justify-between items-center mb-8 lg:mb-20">
               <Image
-                className="rounded-lg w-full md:max-w-[340px] md:max-h-[270px] lg:max-w-[615px] lg:max-h-[441px] object-cover object-bottom md:mr-3 lg:mr-5"
+                className="rounded-lg w-full max-w-[340px] max-h-[270px] lg:max-w-[615px] lg:max-h-[441px] object-cover object-bottom md:mr-3 lg:mr-5"
                 src={"/images/productManufacturing.jpg"}
                 alt="Product Manufacturing"
                 width={615}

@@ -16,6 +16,12 @@
     font-size: 22px;
 }
 
+@media only screen and (max-width:1023px) {
+    .stepTitle {
+        font-size: 17px;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .stepTitle {
         font-size: 12px;
