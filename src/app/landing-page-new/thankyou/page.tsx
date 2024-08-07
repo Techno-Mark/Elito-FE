@@ -23,7 +23,7 @@ const ThankYou = () => {
           Our expert will contact you to discuss further soon!
         </div>
         <Link
-          className="bg-[#D30300] font-poppins text-[16px] text-white font-semibold py-3 px-5 rounded-lg w-full max-w-[156px] md:max-w-[270px] inline-block"
+          className="bg-[#D30300] font-poppins text-[12px] md:text-[16px] text-white font-semibold py-3 px-5 rounded-lg w-full max-w-[156px] md:max-w-[270px] inline-block"
           href="/"
         >
           Visit Our Website

@@ -22,8 +22,14 @@ function Navbar() {
   const pathname = usePathname();
   const [headerHide, setHeaderHide] = useState(false);
   useEffect(() => {
-    if (pathname === "/landing-page-new" || "/landing-page-new/thankyou") {
+    console.log(pathname);
+    console.log("true",
+      pathname === "/landing-page-new" || "/landing-page-new/thankyou"
+    );
+    if (pathname === "/landing-page-new" || pathname === "/landing-page-new/thankyou") {
       setHeaderHide(true);
+    } else {
+      setHeaderHide(false);
     }
   }, [pathname]);
 

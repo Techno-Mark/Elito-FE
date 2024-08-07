@@ -431,7 +431,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <LongerShelfLife className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -442,7 +442,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <AutoChargeRetention className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -453,7 +453,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <ZeroMaintenance className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -464,7 +464,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <WeatherConditions className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -475,7 +475,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <ReserveCapacity className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -486,7 +486,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <PerformanceRating className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -497,7 +497,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <Terrains className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">
@@ -508,7 +508,7 @@ export default function Home() {
               <li className="w-1/2 lg:w-1/4 my-4 md:my-6">
                 <Link
                   href="javascript;void(0);"
-                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full"
+                  className="m-2 px-4 py-4 md:py-8 bg-white shadow-lg flex flex-col justify-center items-center border border-transparent rounded-xl hover:border-[#D30300] h-full pointer-events-none"
                 >
                   <WaterLoss className="w-[25px] h-[25px] md:w-[61px] md:h-[61px] object-contain" />
                   <span className="pt-4 md:pt-8 font-poppins text-[#333333] text-center text-[12px] md:text-[20px]">

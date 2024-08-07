@@ -45,7 +45,10 @@ function Footer() {
   const pathname = usePathname();
   const [footerHide, setFooterHide] = useState(false);
   useEffect(() => {
-    if (pathname === "/landing-page-new" || "/landing-page-new/thankyou") {
+    if (
+      pathname === "/landing-page-new" ||
+      pathname === "/landing-page-new/thankyou"
+    ) {
       setFooterHide(true);
     }
   }, [pathname]);
