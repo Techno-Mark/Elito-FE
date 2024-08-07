@@ -21,7 +21,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
         onClick={toggleAccordion}
       >
         <span
-          className={`font-poppins text-xl text-bold leading-normal ${
+          className={`font-poppins text-base lg:text-xl text-bold leading-normal ${
             isOpen ? "text-[#D30300]" : "text-[#333333]"
           } ${styles.accordianTitle}`}
         >

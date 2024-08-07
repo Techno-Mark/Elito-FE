@@ -20,13 +20,13 @@ const InquireForm = () => {
   return (
     <>
       <section
-        className={`bg-[#404040] py-2 lg:sticky lg:bottom-0 ${styles.inquiryForm} hidden lg:block`}
+        className={`bg-[#404040] py-2 md:sticky md:bottom-0 ${styles.inquiryForm} hidden md:block`}
       >
         <div className="container mx-auto">
           <InqForm />
         </div>
       </section>
-      <div className="block lg:hidden fixed bottom-5 text-center w-full z-9">
+      <div className="block md:hidden fixed bottom-5 text-center w-full z-9">
         <Link
           href="javascript:void(0)"
           onClick={() => setEnqFormPopup(true)}
@@ -62,7 +62,7 @@ const InquireForm = () => {
         </Link>
       </div>
       {enqFormPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999] lg:hidden">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999] md:hidden">
           <div className="bg-white md:w-3/5 w-[calc(100%-30px)] border rounded-lg">
             <div className="flex !justify-end pt-4 pr-5">
               <button
