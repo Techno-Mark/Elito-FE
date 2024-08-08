@@ -108,7 +108,7 @@ const BecomeDistributor = () => {
       enableReinitialize={true}
       onSubmit={handleSubmit}
     >
-      {({ errors, touched, setFieldValue }) => (
+      {({ errors, touched, setFieldValue, handleChange }) => (
         <Form className="w-full">
           <div className="flex flex-col">
             <div className="w-full mb-3 md:mb-5">
@@ -116,9 +116,23 @@ const BecomeDistributor = () => {
                 as={InputField}
                 id="grid-first-name"
                 name="fullName"
-                placeholder="Full Name"
+                placeholder="Full Name name"
                 type="text"
                 required={true}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  let { value } = e.target;
+
+                  // Remove any leading spaces
+                  if (value.startsWith(" ")) {
+                    value = value.trimStart();
+                  }
+
+                  // Replace multiple consecutive spaces with a single space
+                  value = value.replace(/(\s\s+)/g, " ");
+
+                  // Update the field value
+                  setFieldValue("fullName", value);
+                }}
                 className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 focus:outline-none text-[#404040] ${
                   getIn(errors, "fullName") && getIn(touched, "fullName")
                     ? "border-red-500"
@@ -179,6 +193,7 @@ const BecomeDistributor = () => {
               type="email"
               placeholder="Email Address"
               required={true}
+              
               className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 focus:outline-none text-[#404040] ${
                 getIn(errors, "emailId") && getIn(touched, "emailId")
                   ? "border-red-500"
@@ -199,6 +214,14 @@ const BecomeDistributor = () => {
               type="text"
               required={true}
               placeholder="City"
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                let { value } = e.target;
+                if (value.startsWith(" ")) {
+                  value = value.trimStart();
+                }
+                value = value.replace(/(\s\s+)/g, " ");
+                setFieldValue("city", value);
+              }}
               className={`w-full flex justify-between px-4 py-2 leading-tight bg-white text-[#404040] font-medium border border-gray-300 rounded-lg cursor-pointer focus:outline-none min-h-[45px] items-center ${
                 getIn(errors, "city") && getIn(touched, "city")
                   ? "border-red-500"

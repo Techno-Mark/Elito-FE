@@ -153,7 +153,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                         setFieldValue("phoneNumber", value);
                       }
                     }}
-                    className={`block w-full max-w-[165px] border border-[#73727366] text-xs text-[#404040] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none ${
+                    className={`block w-full  border border-[#73727366] text-xs text-[#404040] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none ${
                       getIn(errors, "phoneNumber") &&
                       getIn(touched, "phoneNumber")
                         ? "border-red-500"
