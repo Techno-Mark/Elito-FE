@@ -37,7 +37,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <div className="px-4 pb-4">{content}</div>
+        <div className="pb-4">{content}</div>
       </div>
     </div>
   );
