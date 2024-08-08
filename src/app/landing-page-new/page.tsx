@@ -21,14 +21,16 @@ import Terrains from "../../../public/assets/icons/benefits/Terrains";
 import WaterLoss from "../../../public/assets/icons/benefits/waterLoss";
 import WeatherConditions from "../../../public/assets/icons/benefits/weatherConditions";
 import ZeroMaintenance from "../../../public/assets/icons/benefits/zeroMaintenance";
-import Distributorship from "../../../public/assets/icons/Distributorship";
 import Entrepreneur from "../../../public/assets/icons/Entrepreneur";
 import ImportExport from "../../../public/assets/icons/importExport";
 import IndustryLeader from "../../../public/assets/icons/IndustryLeader";
+import Marketing from "../../../public/assets/icons/Marketing";
 import Performance from "../../../public/assets/icons/Performance";
 import Point from "../../../public/assets/icons/point";
 import QualityCheck from "../../../public/assets/icons/QualityCheck";
 import RetailChain from "../../../public/assets/icons/RetailChain";
+import Roi from "../../../public/assets/icons/roi";
+import Turnover from "../../../public/assets/icons/Turnover";
 import Wholesaler from "../../../public/assets/icons/Wholesaler";
 
 export default function Home() {
@@ -38,9 +40,12 @@ export default function Home() {
       content: (
         <p className="text-[12px] lg:text-lg text-[#333333] font-poppins">
           You can become an Elito automotive battery distributor if you fit into
-          any of the following categories: &gt; Export-Import Firm &gt; Existing
-          Distributor/Wholesaler &gt; Large Retail Chain &gt; Entrepreneur &gt;
-          Automotive Aftermarket Trading Firm
+          any of the following categories:{" "}
+          <span className="block">
+            &gt; Export-Import Firm &gt; Existing Distributor/Wholesaler &gt;
+            Large Retail Chain &gt; Entrepreneur &gt; Automotive Aftermarket
+            Trading Firm
+          </span>
         </p>
       ),
     },
@@ -207,7 +212,7 @@ export default function Home() {
         <section className={`relative py-10 lg:py-16`}>
           <div className="container px-4">
             <div className="flex flex-wrap justify-center lg:justify-between items-center text-[#404040]">
-              <h4 className="text-[22px] lg:text-[30px] text-center md:text-left leading-none md:max-w-[60%] lg:max-w-[665px] font-normal">
+              <h4 className="text-[22px] lg:text-[30px] text-center md:text-left leading-none md:leading-normal md:max-w-[60%] lg:max-w-[665px] font-normal">
                 Here&apos;s what you must do to
                 <strong className="block font-semibold">
                   further comply with our process and requirements.
@@ -261,7 +266,7 @@ export default function Home() {
         <section className={`relative py-10 lg:py-16`}>
           <div className="container px-4">
             <div className="flex flex-wrap md:flex-nowrap justify-between items-center text-[#404040] px-4 md:px-0">
-              <h4 className="text-[22px] lg:text-[30px] leading-none max-w-[665px] font-normal text-center md:text-left">
+              <h4 className="text-[22px] lg:text-[30px] leading-none lg:leading-normal max-w-[500px] font-normal text-center md:text-left">
                 Elito Battery distributorship comes with ample benefits that
                 would
                 <strong className="block font-semibold">
@@ -283,19 +288,23 @@ export default function Home() {
           <div className="container relative px-4 text-white">
             <div className="w-full lg:w-3/5 text-center mx-auto pb-8">
               <h4 className="font-semibold text-[22px] lg:text-[30px] leading-none pb-2">
-                Discover the Multifold Benefits of Becoming an Elito Battery
-                Distributor
+                Discover the Multifold Benefits of{" "}
+                <span className="xl:block">
+                  Becoming an Elito Battery Distributor
+                </span>
               </h4>
               <p className="lg:pb-6 font-poppins font-normal text-[14px] lg:text-[18px]">
-                Still wondering why you must partner up with Elito Battery? Here
-                are the significant ways in which our distributorship would
-                benefit you!
+                Still wondering why you must partner up with Elito Battery?
+                <span className="xl:block">
+                  Here are the significant ways in which our distributorship
+                  would benefit you!
+                </span>
               </p>
             </div>
             <div className="flex flex-wrap md:flex-nowrap justify-around lg:mt-8">
               <div className="flex flex-col w-1/2 lg:w-auto lg:max-w-[225px] items-center text-center mt-8 md:mt-0 px-2 lg:px-0">
                 <div className="bg-white border border-2 lg:border-4 border-[#EDEDED] rounded-full p-3 lg:p-6 max-w-[62px] max-h-[62px] lg:max-w-[100px] lg:max-h-[100px]">
-                  <Distributorship className="w-full h-auto" />
+                  <ImportExport className="w-full h-auto" />
                 </div>
                 <p className="font-poppins pt-3 md:pt-5 text-[14px] lg:text-[18px]">
                   Sole Distributorship Country and State-wise
@@ -303,7 +312,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col w-1/2 lg:w-auto lg:max-w-[225px] items-center text-center mt-8 md:mt-0 px-2 lg:px-0">
                 <div className="bg-white border border-2 lg:border-4 border-[#EDEDED] rounded-full p-3 lg:p-6 max-w-[62px] max-h-[62px] lg:max-w-[100px] lg:max-h-[100px]">
-                  <ImportExport className="w-full h-auto" />
+                  <Roi className="w-full h-auto" />
                 </div>
                 <p className="font-poppins pt-3 md:pt-5 text-[14px] lg:text-[18px]">
                   High ROI
@@ -311,7 +320,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col w-1/2 lg:w-auto lg:max-w-[225px] items-center text-center mt-8 md:mt-0 px-2 lg:px-0">
                 <div className="bg-white border border-2 lg:border-4 border-[#EDEDED] rounded-full p-3 lg:p-6 max-w-[62px] max-h-[62px] lg:max-w-[100px] lg:max-h-[100px]">
-                  <RetailChain className="w-full h-auto" />
+                  <Turnover className="w-full h-auto" />
                 </div>
                 <p className="font-poppins pt-3 md:pt-5 text-[14px] lg:text-[18px]">
                   Quick Sales Turnover
@@ -319,7 +328,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col w-1/2 lg:w-auto lg:max-w-[225px] items-center text-center mt-8 md:mt-0 px-2 lg:px-0">
                 <div className="bg-white border border-2 lg:border-4 border-[#EDEDED] rounded-full p-3 lg:p-6 max-w-[62px] max-h-[62px] lg:max-w-[100px] lg:max-h-[100px]">
-                  <Entrepreneur className="w-full h-auto" />
+                  <Marketing className="w-full h-auto" />
                 </div>
                 <p className="font-poppins pt-3 md:pt-5 text-[14px] lg:text-[18px]">
                   Marketing and Branding Support
@@ -337,8 +346,11 @@ export default function Home() {
             </h3>
             <p className="block font-poppins max-w-[880px] text-center text-[#737273] text-[14px] lg:text-lg mb-8 mx-auto">
               Elito automotive batteries come in a range of two types that cater
-              to the distinct requirements of the automobile industry. Here are
-              the types of batteries that we offer.
+              to the distinct{" "}
+              <span className="lg:block">
+                requirements of the automobile industry. Here are the types of
+                batteries that we offer.
+              </span>
             </p>
             <div className="lg:pb-16 flex justify-around flex-col md:flex-row items-center">
               {needs.needs?.map((item: any, index: any) => (
@@ -371,14 +383,14 @@ export default function Home() {
         </section>
 
         {/* Product Manufacturing */}
-        <section className="mb-8 lg:mb-16">
+        <section className="mb-8">
           <div className="container">
             <h3 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-6 lg:pb-12 max-w-[600px] mx-auto">
               Here&apos;s All You Need to Know About Our Product Manufacturing
             </h3>
             <div className="flex flex-wrap md:flex-nowrap justify-center lg:justify-between items-center mb-8 lg:mb-20">
               <Image
-                className="rounded-lg w-full max-w-[340px] max-h-[270px] lg:max-w-[615px] lg:max-h-[441px] object-cover object-bottom md:mr-3 lg:mr-5"
+                className="rounded-lg w-full max-w-[340px] max-h-[270px] lg:max-w-[615px] lg:max-h-[300px] object-cover object-bottom md:mr-3 lg:mr-5"
                 src={"/images/productManufacturing.jpg"}
                 alt="Product Manufacturing"
                 width={615}
@@ -407,7 +419,7 @@ export default function Home() {
               </div>
             </div>
             <div className="max-w-[300px] lg:max-w-[600px] mx-auto">
-              <h4 className="relative pb-6 md:pb-8 lg:pb-12 text-center text-[#404040] text-lg lg:text-4xl font-semibold after:bottom-0 after:bg-[#000000] after:w-[156px] lg:after:w-[290px] after:h-[1px] after:absolute after:left-0 after:right-0 after:mx-auto">
+              <h4 className="relative pb-6 md:pb-8 lg:pb-16 text-center text-[#404040] text-lg lg:text-4xl font-semibold after:bottom-0 after:bg-[#000000] after:w-[156px] lg:after:w-[290px] after:h-[1px] after:absolute after:left-0 after:right-0 after:mx-auto">
                 Get an Insight into Why We are Chosen by Our Customers
               </h4>
             </div>

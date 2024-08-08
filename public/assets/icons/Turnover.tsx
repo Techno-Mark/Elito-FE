@@ -1,8 +1,9 @@
 import React from "react";
 
-const Turnover = () => {
+const Turnover: React.FC<iconProps> = ({ className }) => {
   return (
     <svg
+      className={className}
       width="58"
       height="58"
       viewBox="0 0 58 58"

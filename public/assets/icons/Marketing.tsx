@@ -1,8 +1,9 @@
 import React from "react";
 
-const Marketing = () => {
+const Marketing: React.FC<iconProps> = ({ className }) => {
   return (
     <svg
+      className={className}
       width="62"
       height="62"
       viewBox="0 0 62 62"
