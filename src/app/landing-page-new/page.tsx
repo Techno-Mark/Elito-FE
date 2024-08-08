@@ -29,9 +29,9 @@ import Performance from "../../../public/assets/icons/Performance";
 import Point from "../../../public/assets/icons/point";
 import QualityCheck from "../../../public/assets/icons/QualityCheck";
 import RetailChain from "../../../public/assets/icons/RetailChain";
-import Roi from "../../../public/assets/icons/roi";
 import Turnover from "../../../public/assets/icons/Turnover";
 import Wholesaler from "../../../public/assets/icons/Wholesaler";
+import Roi from "../../../public/assets/icons/Roi";
 
 export default function Home() {
   const faqItems = [
