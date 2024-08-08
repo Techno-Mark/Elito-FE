@@ -53,7 +53,13 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
       .email("Invalid email address")
       .trim()
       .required("Email ID is required"),
-    city: Yup.string().required("City is required").trim(),
+    city: Yup.string()
+      .trim()
+      .matches(
+        /^[a-zA-Z0-9\s]*$/,
+        "Full Name cannot contain special characters"
+      )
+      .required("City is required"),
     // acceptTerms: Yup.boolean().oneOf(
     //   [true],
     //   "You must accept the terms and conditions"
@@ -111,7 +117,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
       {({ errors, touched, setFieldValue }) => (
         <Form className="w-full">
           <div
-            className={`flex flex-col items-center justify-center md:items-center md:flex-row whitespace-nowrap ${
+            className={`flex flex-col items-start justify-center md:flex-row whitespace-nowrap ${
               varient === "dark" ? "md:flex-col whitespace-normal" : ""
             }`}
           >
@@ -128,7 +134,26 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                     ? "border-red-500 mb-0.5"
                     : ""
                 }`}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  let { value } = e.target;
+
+                  // Remove any leading spaces
+                  if (value.startsWith(" ")) {
+                    value = value.trimStart();
+                  }
+
+                  // Replace multiple consecutive spaces with a single space
+                  value = value.replace(/(\s\s+)/g, " ");
+
+                  // Update the field value
+                  setFieldValue("fullName", value);
+                }}
               />
+              {getIn(errors, "fullName") && getIn(touched, "fullName") && (
+                <div className="text-red-500 font-medium text-sm">
+                  {getIn(errors, "fullName")}
+                </div>
+              )}
             </div>
             <div className="w-full md:mr-2 mb-2 lg:max-w-[270px]">
               <div className="flex flex-col">
@@ -156,11 +181,17 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                     className={`block w-full  border border-[#73727366] text-xs text-[#404040] font-medium rounded-lg py-2 px-4 ml-1 focus:outline-none ${
                       getIn(errors, "phoneNumber") &&
                       getIn(touched, "phoneNumber")
-                        ? "border-red-500"
+                        ? "border-red-500 mb-0.5"
                         : ""
                     }`}
                   />
                 </div>
+                {getIn(errors, "phoneNumber") &&
+                  getIn(touched, "phoneNumber") && (
+                    <div className="text-red-500 font-medium text-sm">
+                      {getIn(errors, "phoneNumber")}
+                    </div>
+                  )}
               </div>
             </div>
             <div className="w-full md:mr-2 mb-2 lg:max-w-[165px]">
@@ -177,6 +208,11 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                     : ""
                 }`}
               />
+              {getIn(errors, "emailId") && getIn(touched, "emailId") && (
+                <div className="text-red-500 font-medium text-sm">
+                  {getIn(errors, "emailId")}
+                </div>
+              )}
             </div>
             <div className="w-full md:mr-2 mb-2 lg:max-w-[165px]">
               <Field
@@ -190,7 +226,20 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
                     ? "border-red-500"
                     : ""
                 }`}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  let { value } = e.target;
+                  if (value.startsWith(" ")) {
+                    value = value.trimStart();
+                  }
+                  value = value.replace(/(\s\s+)/g, " ");
+                  setFieldValue("city", value);
+                }}
               />
+              {getIn(errors, "city") && getIn(touched, "city") && (
+                <div className="text-red-500 font-medium text-sm">
+                  {getIn(errors, "city")}
+                </div>
+              )}
             </div>
             <div className="w-full md:mr-2 mb-2 md:mb-0">
               <div className="text-left whitespace-normal">

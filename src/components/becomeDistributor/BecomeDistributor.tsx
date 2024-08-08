@@ -44,7 +44,13 @@ const BecomeDistributor = () => {
       .trim()
       .email("Invalid email address")
       .required("Email ID is required"),
-    city: Yup.string().trim().required("City is required"),
+    city: Yup.string()
+      .trim()
+      .matches(
+        /^[a-zA-Z0-9\s]*$/,
+        "Full Name cannot contain special characters"
+      )
+      .required("City is required"),
     // acceptTerms: Yup.boolean().oneOf(
     //   [true],
     //   "You must accept the terms and conditions"
@@ -116,7 +122,7 @@ const BecomeDistributor = () => {
                 as={InputField}
                 id="grid-first-name"
                 name="fullName"
-                placeholder="Full Name name"
+                placeholder="Full Name"
                 type="text"
                 required={true}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -193,7 +199,6 @@ const BecomeDistributor = () => {
               type="email"
               placeholder="Email Address"
               required={true}
-              
               className={`block w-full border border-[#73727366] rounded-lg py-2 px-4 focus:outline-none text-[#404040] ${
                 getIn(errors, "emailId") && getIn(touched, "emailId")
                   ? "border-red-500"
