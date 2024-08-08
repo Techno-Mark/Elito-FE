@@ -266,7 +266,7 @@ export default function Home() {
         <section className={`relative py-10 lg:py-16`}>
           <div className="container px-4">
             <div className="flex flex-wrap md:flex-nowrap justify-between items-center text-[#404040] px-4 md:px-0">
-              <h4 className="text-[22px] lg:text-[30px] leading-none max-w-[665px] font-normal text-center md:text-left">
+              <h4 className="text-[22px] lg:text-[30px] leading-none lg:leading-normal max-w-[500px] font-normal text-center md:text-left">
                 Elito Battery distributorship comes with ample benefits that
                 would
                 <strong className="block font-semibold">
@@ -288,13 +288,17 @@ export default function Home() {
           <div className="container relative px-4 text-white">
             <div className="w-full lg:w-3/5 text-center mx-auto pb-8">
               <h4 className="font-semibold text-[22px] lg:text-[30px] leading-none pb-2">
-                Discover the Multifold Benefits of Becoming an Elito Battery
-                Distributor
+                Discover the Multifold Benefits of{" "}
+                <span className="xl:block">
+                  Becoming an Elito Battery Distributor
+                </span>
               </h4>
               <p className="lg:pb-6 font-poppins font-normal text-[14px] lg:text-[18px]">
-                Still wondering why you must partner up with Elito Battery? Here
-                are the significant ways in which our distributorship would
-                benefit you!
+                Still wondering why you must partner up with Elito Battery?
+                <span className="xl:block">
+                  Here are the significant ways in which our distributorship
+                  would benefit you!
+                </span>
               </p>
             </div>
             <div className="flex flex-wrap md:flex-nowrap justify-around lg:mt-8">

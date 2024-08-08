@@ -20,37 +20,37 @@ const HeroBanner = () => {
         {...settingsHero}
         className="max-w-screen overflow-hidden newHeroBanner"
       >
-        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 lg:py-16 firstHeroBg items-center">
+        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 pt-16 lg:pt-0 lg:py-16 firstHeroBg md:items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[40%] md:mt-8 lg:mt-0">
               <h4 className="text-[14px] md:text-[20px] lg:text-[30px] text-white font-normal">
                 Gear Up Your Business with
               </h4>
-              <h3 className="text-[32px] text-white text-center md:text-left md:text-[45px] xl:text-[60px] font-semibold leading-none">
+              <h3 className="text-[26px] text-white text-center md:text-left md:text-[45px] xl:text-[60px] font-semibold leading-normal lg:leading-none">
                 Long-Lasting Automotive Batteries
               </h3>
             </div>
           </div>
         </div>
-        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 lg:py-16 secondHeroBg items-center">
+        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 pt-16 lg:pt-0 lg:py-16 secondHeroBg md:items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[40%] md:mt-8 lg:mt-0">
               <h4 className="text-[14px] md:text-[20px] lg:text-[30px] text-white font-normal">
                 Reliable Batteries Designed for
               </h4>
-              <h3 className="text-[32px] text-white text-center md:text-left md:text-[45px] xl:text-[60px] font-semibold leading-none">
+              <h3 className="text-[26px] text-white text-center md:text-left md:text-[45px] xl:text-[60px] font-semibold leading-normal lg:leading-none">
                 All-Weather Conditions
               </h3>
             </div>
           </div>
         </div>
-        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 lg:py-16 thirdHeroBg items-center">
+        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 pt-16 lg:pt-0 lg:py-16 thirdHeroBg md:items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[40%]">
               <h4 className="text-[14px] md:text-[20px] lg:text-[30px] text-white font-normal">
                 Your Trusted Automotive battery
               </h4>
-              <h3 className="text-[32px] text-white text-center md:text-left md:text-[45px] xl:text-[60px] font-semibold leading-none">
+              <h3 className="text-[26px] text-white text-center md:text-left md:text-[45px] xl:text-[60px] font-semibold leading-normal lg:leading-none">
                 Distribution Partner
               </h3>
             </div>
@@ -59,7 +59,7 @@ const HeroBanner = () => {
       </Slider>
 
       <div
-        className={`mx-auto md:mx-0 bg-white rounded-lg p-5 lg:p-7 md:absolute w-full md:w-1/2 lg:w-1/3 mt-6 md:mt-0 md:right-5 lg:right-24 md:top-[40%] lg:top-1/2 -translate-y-1/2 max-w-[90%] lg:max-w-[455px] z-10 ${styles.contactForm}`}
+        className={`mx-auto md:mx-0 bg-white rounded-lg p-5 lg:p-7 md:absolute w-full md:w-1/2 lg:w-1/3 mt-6 md:mt-0 md:right-5 lg:right-24 md:top-[40%] lg:top-1/2  -translate-y-1/3 lg:-translate-y-1/2 max-w-[90%] lg:max-w-[455px] z-10 ${styles.contactForm}`}
       >
         <h3 className="text-themeRed pb-[30px] font-semibold font-poppins text-[20px]">
           Become an Exclusive Distributor
