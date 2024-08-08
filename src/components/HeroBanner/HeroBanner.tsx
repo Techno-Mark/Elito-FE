@@ -20,7 +20,7 @@ const HeroBanner = () => {
         {...settingsHero}
         className="max-w-screen overflow-hidden newHeroBanner"
       >
-        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 pt-16 lg:pt-0 lg:py-16 firstHeroBg md:items-center">
+        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg pt-12 lg:p-5 lg:pt-0 lg:py-16 firstHeroBg md:items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[40%] md:mt-8 lg:mt-0">
               <h4 className="text-[14px] md:text-[20px] lg:text-[30px] text-white font-normal">
@@ -32,7 +32,7 @@ const HeroBanner = () => {
             </div>
           </div>
         </div>
-        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 pt-16 lg:pt-0 lg:py-16 secondHeroBg md:items-center">
+        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg pt-12 lg:p-5 lg:pt-0 lg:py-16 secondHeroBg md:items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[40%] md:mt-8 lg:mt-0">
               <h4 className="text-[14px] md:text-[20px] lg:text-[30px] text-white font-normal">
@@ -44,7 +44,7 @@ const HeroBanner = () => {
             </div>
           </div>
         </div>
-        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg p-5 pt-16 lg:pt-0 lg:py-16 thirdHeroBg md:items-center">
+        <div className="!flex hero-section min-h-[340px] md:min-h-[640px] home-hero-bg pt-12 lg:p-5 lg:pt-0 lg:py-16 thirdHeroBg md:items-center">
           <div className="container">
             <div className="flex flex-col justify-center items-center md:items-start w-full md:w-[40%]">
               <h4 className="text-[14px] md:text-[20px] lg:text-[30px] text-white font-normal">

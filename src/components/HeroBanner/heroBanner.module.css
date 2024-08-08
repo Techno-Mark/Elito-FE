@@ -4,6 +4,18 @@
 
 @media only screen and (max-width:767px) {
     .heroBannerNewLanding {
-        max-height: 600px;
+        max-height: 705px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .heroBannerNewLanding {
+        max-height: 735px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .heroBannerNewLanding {
+        max-height: 755px;
     }
 }
