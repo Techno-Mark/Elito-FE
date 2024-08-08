@@ -30,6 +30,7 @@ const BecomeDistributor = () => {
   const validationSchema = Yup.object({
     fullName: Yup.string()
       .max(250, "Full Name cannot be longer than 250 characters.")
+      .trim()
       .matches(
         /^[a-zA-Z0-9\s]*$/,
         "Full Name cannot contain special characters"
@@ -40,9 +41,10 @@ const BecomeDistributor = () => {
       .required("Phone Number is required"),
     emailId: Yup.string()
       .max(250, "Email Address cannot be longer than 250 characters.")
+      .trim()
       .email("Invalid email address")
       .required("Email ID is required"),
-    city: Yup.string().required("City is required"),
+    city: Yup.string().trim().required("City is required"),
     // acceptTerms: Yup.boolean().oneOf(
     //   [true],
     //   "You must accept the terms and conditions"
