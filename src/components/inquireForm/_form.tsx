@@ -47,7 +47,7 @@ const InqForm: React.FC<EnquireProps> = ({ varient = "white" }) => {
       .required("Full Name is required"),
     phoneNumber: Yup.string()
       .matches(/^\d{10}$/, "Number must be exactly 10 digits")
-      .required("Phone Number is required"),
+      .required("Mobile Number is required"),
     emailId: Yup.string()
       .max(250, "Email Address cannot be longer than 250 characters.")
       .email("Invalid email address")

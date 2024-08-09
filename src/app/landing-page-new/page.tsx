@@ -410,7 +410,7 @@ export default function Home() {
                   manufactured and marketed in developed countries, which have
                   revolutionized the Indian automotive battery market.
                 </p>
-                <p className="my-5">
+                <p className="mt-5">
                   Amara Raja batteries are exported to
                   <strong> 50+ countries all over the world,</strong> and with
                   its innovative engineering, has positioned itself as an
