@@ -95,8 +95,11 @@ export default function Home() {
           </h2>
           <p className="font-poppins text-[#333333] text-justify md:text-center mb-8">
             If you are someone looking forward to taking a business leap, you
-            are in the right place! Here are some of the reasons why you should
-            become an Elito Battery distributor and scale growth.
+            are in the right place!{" "}
+            <span className="md:block">
+              Here are some of the reasons why you should become an Elito
+              Battery distributor and scale growth.
+            </span>
           </p>
 
           <div className="font-poppins text-[#333333] flex flex-col md:flex-row justify-center whyPartnerBlock">
