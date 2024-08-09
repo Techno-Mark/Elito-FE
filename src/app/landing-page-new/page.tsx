@@ -619,7 +619,7 @@ export default function Home() {
         </section>
 
         {/* FAQ */}
-        <section className="py-10 lg:mb-20">
+        <section className="py-10 mb-10 lg:mb-20">
           <div className="container">
             <div className="max-w-[780px] mx-auto mb-8 lg:mb-16">
               <h4 className="text-themeRed text-[22px] lg:text-[30px] font-bold text-center pb-2">
